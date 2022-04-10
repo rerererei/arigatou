@@ -1,0 +1,1820 @@
+@charset "utf-8";
+
+// 色
+$color-base: #242424;
+$color-sub: #DE9C8F;
+$color-active: #E76155;
+
+
+// フォント
+$font-family-ja: 'fot-tsukuardgothic-std', sans-serif;
+$font-family-en: 'source-han-sans-japanese', sans-serif;
+
+// ブレークポイント
+$breakpoints: (
+  "sp-s": "screen and (max-width: 340px)",
+  "sp": "screen and (max-width: 520px)",
+  "sp-l": "screen and (max-width: 620px)",
+  "tab-s": "screen and (max-width: 768px)",
+	"tab": "screen and (max-width: 960px)",
+	"pc-s": "screen and (max-width: 1100px)",
+	"pc": "screen and (max-width: 1200px)",
+	"pc-l": "screen and (max-width: 1290px)",
+	"pc-ll": "screen and (min-width: 1380px)",
+
+);
+
+// メディアクエリー
+@mixin mq($breakpoint: sp) {
+
+  @media #{map-get($breakpoints, $breakpoint)} {
+
+    @content;
+  }
+}
+
+@media screen and (max-width: 520px){
+  .is-pc {
+    display: none;
+  }
+}
+  
+@media screen and (min-width: 521px) {
+  .is-sp {
+    display: none;
+  }
+}
+
+ /*==============================================
+　共通
+ ==============================================*/
+// *{
+//   outline: solid 1px black;
+// }
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-family-ja;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  background-color: #fff;
+  color: $color-base;
+  letter-spacing: 0.05;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+a {
+  color: $color-base;
+  text-decoration: none;
+  transition: all 0.3s;
+ }
+
+ul{
+  list-style: none;
+}
+
+section{
+  width: 82.43%;
+  margin-left: auto;
+  @include mq("tab"){
+    width: 100%;
+  }
+}
+
+.section-title-jp{
+  font-family: $font-family-ja;
+  font-size: 33px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  @include mq("tab"){
+    font-size: 3rem;
+  }
+}
+
+.section-title-en{
+ font-family: $font-family-en;
+ font-weight: bold;
+ color: $color-sub;
+ text-align: center;
+ font-size: 16px;
+}
+
+.link-btn{
+   margin-top: 4rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.05;
+  text-align: right;
+  @include mq("sp"){
+    text-align: center;
+  }
+  a{
+    display: inline-block;
+    background-color: $color-active;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    width: 216px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    &:hover{
+      opacity: 0.8;
+    }
+    
+    &::before{
+      position: absolute;
+      content: "";
+      background: url(img/arrow.png);
+      top: 50%;
+      transform: translateY(-50%);
+      left: 16px;
+      width: 16px;
+      height: 8px;
+    }
+  }
+}
+
+/*==============================================
+　header
+==============================================*/
+.header{
+   position: fixed;
+   z-index: 10;
+   @include mq("tab"){
+     position: absolute;
+    }
+}
+
+.header-logo{
+  width: 123px;
+  margin-top: 51px;
+  margin-left: 59px;
+   @include mq("pc-s"){
+     width: 110px;
+     margin-left: 48px;
+   }
+   @include mq("tab"){
+     width: 80px;
+     margin-top: 40px;
+     margin-left: 20px;
+   }
+   @include mq("sp"){
+     width: 60px;
+     margin-top: 20px;
+   }
+}
+
+.global-nav{
+  @include mq("tab"){
+    display: none;
+  }
+}
+
+.global-nav-list{
+  margin-top: 130px;
+  margin-left: 36px;
+  @include mq("pc-s"){
+     margin-left: 30px;
+  }
+}
+
+.global-nav-item{
+  & + &{
+    margin-top: 32px;
+  }
+  a{
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.2;
+    @include mq("pc-s"){
+      font-size: 1.6rem;
+    }
+    
+    span{
+      display: block;
+      font-family: $font-family-en;
+      font-size: 1rem;
+      font-weight: bold;
+      margin-left: 3px;
+    }
+  }
+}
+
+ /*-------------------------------------
+ハンバーガー
+ -------------------------------------*/
+
+.drawer-icon {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  z-index: 3;
+  display: none;
+  &.is-active{
+    .drawer-bar{
+       transition: all 0.3s;
+    }
+   .drawer-bar:nth-child(1) {
+      top: 10px;
+      transform: rotate(-45deg);
+    }
+   .drawer-bar:nth-child(2) {
+      display: none;
+    }
+   .drawer-bar:nth-child(3) {
+     top: 10px;
+     transform: rotate(45deg);
+   }
+  }
+  @include mq("tab") {
+    display: block;
+  }
+}
+
+.drawer-bars {
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  position: relative;
+}
+
+.drawer-bar {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(99, 97, 97);
+   transition: all 0.3s;
+  &:nth-child(1){
+    top: 0;
+  }
+  &:nth-child(2){
+    top: 11px;
+  }
+  &:nth-child(3){
+    top: 22px;
+  }
+}
+
+/*-------------------------------------
+ドロワー
+-------------------------------------*/
+
+.drawer-content {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 2;
+  overflow-y: auto;
+   padding: 4rem 2rem;
+   &.is-active{
+     display: block;
+   }
+   &::before{
+     position: absolute;
+     content: "";
+     background: url(img/background.png);
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+   }
+}
+
+.drawer-content-list{
+  width: 300px;
+  margin: 3rem auto;
+  position: relative;
+  li{
+    border-bottom: 3px solid #c2c1c1;
+  }
+}
+
+.drawer-logo{
+  width: 80px;
+  position: relative;
+}
+
+.drawer-content-item{
+  font-size: 1.8rem;
+  display: block;
+  padding: 20px 0 5px 20px;
+  line-height: 1.2;
+  span{
+    display: block;
+    font-size: 1.5rem;
+    color: $color-sub;
+  }
+}
+
+.drawer-img{
+  position: relative;
+  margin-top: 6rem;
+}
+
+/* ==============================================
+　メインビジュアル
+ ==============================================*/
+
+.mv{
+  height: 768px;
+  background: url(img/background.png) no-repeat center center / cover;
+  position: relative;
+  overflow: hidden;
+  @include mq("sp"){
+   height: 660px;
+  }
+  &::before{
+    position: absolute;
+    content: "";
+    background: url(img/mv-wood.png) no-repeat center center / cover;
+    width: 1366px;
+    height: 153px;
+    bottom: 50px;
+    left: 350px;
+    z-index: 1;
+     @include mq("pc-s"){
+       left: 240px;
+     }
+     @include mq("tab"){
+       left: 0;
+     }
+     @include mq("sp"){
+        left: -183px;
+     }
+  }
+  &::after{
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 120px;
+    background: url(img/mv-person.png) no-repeat center center / cover;
+    bottom: 124px;
+    left: 750px;
+    z-index: 2;
+     animation: img-move 3s steps(5);
+     @include mq("pc-s"){
+       left: 636px;
+     }
+     @include mq("tab"){
+       left: 392px;
+     }
+     @include mq("sp"){
+       left: 218px;
+     }
+  }
+}
+
+@keyframes img-move {
+  0%   { transform: translate(40%, 0%); }
+  100% { transform: translate(0%, 0%); }
+}
+
+.mv-wrapper{
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  &::before{
+    position: absolute;
+    content: "";
+    background: url(img/mv-cloud-center.png) no-repeat center center / cover;
+    top: 10%;
+    left: 44%;
+    width: 120px;
+    height: 73px;
+    animation: fadeInDown 3s ease ;
+    @include mq("pc"){
+      width: 82px;
+      height: 48px;
+      top: 14%;
+    }
+  }
+  &::after{
+    position: absolute;
+    content: "";
+    background: url(img/mv-cloud-right.png) no-repeat center center / cover;
+    top: 20%;
+    left: 71%;
+    width: 178px;
+    animation: fadeInRight 2s ease;
+    height: 108px;
+    @include mq("tab"){
+      display: none;
+    }
+  }
+}
+
+.mv-title{
+ position: relative;
+  top: 25%;
+  left: 34%;
+  font-size: 4.4rem;
+  font-weight: bold;
+  line-height: 1.56;
+  z-index: 2;
+  @include mq("pc-s"){
+    font-size: 4rem;
+    left: 32%;
+  }
+  @include mq("tab"){
+    font-size: 3.8rem;
+    display: inline-block;
+    top: 30%;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+  @include mq("tab-s"){
+    font-size: 3.2rem;
+  }
+  @include mq("sp"){
+    font-size: 2.6rem;
+  }
+  @include mq("sp-s"){
+    font-size: 2.4rem;
+  }
+  &::before{
+    position: absolute;
+    content: "";
+    background: url(img/mv-cloud-left.png) no-repeat center center / contain;
+    top: -100px;
+    left: -158px;
+    width: 178px;
+    height: 108px;
+    animation: fadeInDown 2s ease;
+    @include mq("pc-s"){
+       left: -140px;
+      width: 160px;
+      height: 90px;
+    }
+    @include mq("tab"){
+      left: -90px;
+    }
+    @include mq("sp"){
+      left: -42px;
+      width: 128px;
+      height: 75px;
+    }
+  }
+  &::after{
+    position: absolute;
+    content: "";
+    background: url(img/Homebackground.png) no-repeat center center / cover;
+    bottom: -78px;
+    left: 521px;
+    width: 150px;
+    height: 72px;
+    animation: swing 2s ease 4s;
+    @include mq("pc-s"){
+      left: 480px;
+    }
+    @include mq("tab"){
+      width: 120px;
+    }
+    @include mq("tab-s"){
+      left: 386px;
+    }
+    @include mq("sp"){
+      left: 204px;
+      bottom: -54px;
+      width: 98px;
+      height: 57px;
+    }
+  }
+}
+
+.mv-mgl-1{
+  margin-left: 70px;
+  @include mq("sp"){
+    margin-left: 0;
+  }
+  
+}
+
+.mv-mgl-2{
+  margin-left: 120px;
+  @include mq("sp"){
+    margin-left: 0;
+  }
+  
+}
+
+.mv-side-1{
+  position: absolute;
+  width: 29.35%;
+  top: 85px;
+  left: -14px;
+  @include mq("tab"){
+    display: none;
+  }
+}
+
+.mv-side-2{
+  position: absolute;
+  width: 17.57%;
+  height: 492px;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  @include mq("tab"){
+    display: none;
+  }
+  @include mq("pc-ll"){
+    height: 414px;
+  }
+}
+
+.mv-sun{
+  position: absolute;
+  width: 250px;
+  height: 255px;
+  background: url(img/mv-sun.png) no-repeat center center / cover;
+  top: 40px;
+  right: -110px;
+  z-index: 2;
+   animation: fadeInRight 3s ease;
+  @include mq("pc-s"){
+    width: 225px;
+    height: 230px;
+  }
+  @include mq("tab"){
+    width: 184px;
+    height: 188px;
+    top: 80px;
+    right: -70px;
+  }
+  @include mq("pc"){
+    width: 125px;
+    height: 130px;
+    right: -54px;
+  }
+}
+
+
+/*==============================================
+ ご挨拶
+==============================================*/
+.greeting{
+  position: relative;
+  padding-top: 8rem;
+  background: url(img/background.png) no-repeat center center / cover;
+  @include mq("tab"){
+    padding-top: 0;
+  }
+}
+
+.greeting-wrapper{
+  display: flex;
+  align-items: flex-end;
+  @include mq("tab"){
+    display: block;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+.greeting-img{
+  width: 50%;
+  img{
+    width: 100%;
+  }
+  @include mq("tab"){
+    width: 80%;
+  }
+  @include mq("sp"){
+    width: 100%;
+  }
+}
+
+.greeting-box{
+  width: 50%;
+  background-color: #fff;
+  padding: 6rem;
+  @include mq("pc-l"){
+    padding: 8rem 5rem 9rem;
+  }
+   @include mq("pc"){
+     padding: 4rem 4rem 6rem;
+   }
+   @include mq("pc-s"){
+     padding: 3rem 3rem 3rem;
+   }
+   @include mq("tab"){
+     width: 85%;
+     margin-left: auto;
+   }
+   @include mq("sp"){
+    width: 100%;
+  }
+  
+}
+
+.greeting-title{
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #DE9C8F;
+  @include mq("pc-l"){
+    font-size: 2.8rem;
+  }
+  @include mq("sp"){
+    font-size: 2.4rem;
+  }
+}
+
+.greeting-subtitle{
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.greeting-text{
+  line-height: 2.31;
+  margin-top: 3rem;
+  @include mq("pc-l"){
+    line-height: 2;
+    margin-top: 4rem;
+  }
+  @include mq("pc-s"){
+    line-height: 1.8;
+    margin-top: 2rem;
+  }
+}
+
+/*==============================================
+ サービス
+==============================================*/
+
+.service{
+ position: relative;
+ background: url(img/background.png) no-repeat center center / cover;
+ height: 1243px;
+  @include mq("sp"){
+    height: 1100px;
+  }
+}
+
+.service-wrapper{
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  background-image: url(img/service-bg.png);
+  background-repeat: no-repeat;
+  background-position: right 130px top;
+  top: -20px;
+  
+  @include mq("pc-s"){
+    background-position: right 40px top;
+  }
+  @include mq("tab"){
+    background-position: right 27px top;
+  }
+  @include mq("tab-s"){
+     background-position: right -40px top;
+  }
+  @include mq("sp-l"){
+     background-image: url(img/service-bg02.png);
+  }
+  @include mq("sp"){
+    background: url(img/background.png);
+  }
+}
+
+.service-title{
+  position: absolute;
+  top: 140px;
+  left: 64px;
+  @include mq("sp"){
+    top: 60px;
+    left: 20px;
+  }
+}
+
+.service-item-1{
+  position: absolute;
+  background: url(img/service-1.png) no-repeat center center / cover;
+  width: 507px;
+  height: 332px;
+  top: 19%;
+  right: 41%;
+  animation-duration: 2s;
+
+  @include mq("pc-s"){
+    width: 448px;
+    height: 294px;
+    top: 20%;
+  }
+  @include mq("tab"){
+    width: 440px;
+    height: 290px;
+    top: 21%;
+  }
+  @include mq("tab-s"){
+    top: 19%;
+    right: 33%;
+  }
+  @include mq("sp-l"){
+    top: 18%;
+    right: 21%;
+  }
+  @include mq("sp"){
+    top: 10%;
+    left: -6px;
+  }
+}
+
+.service-item-1-box{
+  width: 73%;
+  padding: 9rem 0 0 5rem;
+  
+  @include mq("pc-s"){
+    padding: 8rem 0 0 5rem;
+  }
+   @include mq("tab"){
+     width: 75%;
+     padding: 7rem 0 0 4.8rem;
+   }
+  @include mq("sp"){
+    width: 77%;
+    padding: 8.3rem 0 0 3.5rem;
+  }
+}
+
+.service-item-2{
+  position: absolute;
+  background: url(img/service-2.png) no-repeat center center / cover;
+  top: 28%;
+  right: -62px;
+  width: 464px;
+  height: 386px;
+  animation-duration: 2s;
+  
+  @include mq("pc-s"){
+    width: 402px;
+    height: 334px;
+    top: 31%;
+    right: -42px;
+  }
+  @include mq("tab"){
+    width: 370px;
+    height: 305px;
+    right: 0;
+    top: 32%;
+  }
+  @include mq("tab-s"){
+    width: 338px;
+    height: 278px;
+    top: 34%;
+  }
+  @include mq("sp-l"){
+    top: 40%;
+  }
+  @include mq("sp"){
+    width: 358px;
+    height: 297px;
+    top: 37%;
+    right: 0;
+  }
+}
+
+.service-item-2-box{
+  width: 77%;
+  padding: 16rem 0 0 7rem;
+  
+  @include mq("pc-s"){
+     padding: 14rem 0 0 7rem;
+  }
+  @include mq("tab"){
+    width: 83%;
+    padding: 13rem 0 0 7rem;
+  }
+  @include mq("tab-s"){
+    padding: 10rem 0 0 5rem;
+  }
+  @include mq("sp"){
+    padding: 12rem 0 0 6rem;
+  }
+}
+
+.service-item-3{
+  width: 530px;
+  height: 394px;
+  position: absolute;
+  background: url(img/service-3.png) no-repeat center center / cover;
+  top: 50%;
+  right: 43%;
+  animation-duration: 2s;
+  
+  @include mq("pc-s"){
+    right: 40%;
+  }
+   @include mq("tab"){
+     right: 41%;
+     top: 53%;
+     width: 484px;
+     height: 361px;
+   }
+   @include mq("tab-s"){
+     right: 28%;
+      top: 56%;
+   }
+    @include mq("sp-l"){
+      right: 13%;
+      top: 64%;
+    }
+   @include mq("sp"){
+     top: 62%;
+     width: 494px;
+     height: 371px; 
+     left: -37px;
+   }
+}
+
+.service-item-3-box{
+  width: 72%;
+  padding: 13rem 0 0 7rem;
+  @include mq("tab"){
+     padding: 12rem 0 0 5.5rem;
+  }
+   @include mq("sp"){
+     padding: 12rem 0 0 6rem;
+   }
+}
+
+.service-mgl{
+  margin-left: 53px;
+}
+
+.service-item-title{
+  font-size: 2rem;
+  font-weight: bold;
+  color: $color-sub;
+  line-height: 1;
+  @include mq("sp"){
+    font-size: 1.8rem;
+  }
+}
+
+.service-item-text{
+  font-size: 1.4rem;
+  margin-top: 1.4rem;
+  line-height: 1.6;
+  @include mq("pc-s"){
+    margin-top: 1rem;
+    line-height: 1.4;
+  }
+}
+
+.space{
+  height: 20px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-left: 3px solid #EBEBEB;
+}
+
+/*==============================================
+ スタッフの声
+==============================================*/
+
+.voice{
+  padding-top: 6rem;
+  padding-bottom: 12rem;
+  border-left: 3px solid #EBEBEB;
+   @include mq("tab"){
+    border: #fff;
+    padding-bottom: 6rem;
+   }
+   @include mq("pc"){
+     padding-top: 2rem;
+   }
+}
+
+.voice-content{
+  display: flex;
+  padding-right: 58px;
+  padding-left: 64px;
+  @include mq("pc-l"){
+    padding-right: 28px;
+    padding-left: 48px;
+  }
+   @include mq("tab"){
+     display: block;
+   }
+   @include mq("tab"){
+     padding-right: 14px;
+     padding-left: 20px;
+   }
+}
+
+.voice-item{
+  position: relative;
+  font-family: $font-family-en;
+  font-weight: bold;
+  font-size: 1.4rem;
+  width: 50%;
+  margin-top: 166px;
+  @include mq("tab"){
+    width: 65%;
+    margin: 150px auto 0;
+  }
+  @include mq("sp-l"){
+    width: 100%;
+  }
+  @include mq("sp"){
+    margin: 80px auto 0;
+  }
+  &:first-child{
+    margin-right: 57px;
+    @include mq("pc-l"){
+      margin-right: 40px;
+    }
+    @include mq("tab"){
+      margin: 150px auto 0;
+    }
+    @include mq("sp"){
+    margin: 80px auto 0;
+    }
+  }
+}
+
+.voice-bg{
+  background: url(img/voice-bg.png) no-repeat center center / cover;
+  width: 80%;
+  height: 353px;
+  margin: 0 auto;
+  position: relative;
+  @include mq("sp"){
+    width: 94%;
+    height: 340px;
+  }
+}
+
+.voice-bg-content{
+   position: absolute;
+   bottom: 62px;
+   right: 32px;
+   @include mq("pc"){
+     right: 14px;
+   }
+   @include mq("pc-s"){
+     bottom: 50px;
+   }
+   @include mq("sp"){
+     bottom: 10px;
+   }
+}
+
+.voice-img{
+  width: 53.16%;
+  position: absolute;
+  top:-28px;  
+  left: 0;
+  @include mq("sp"){
+   top: 100%;
+   transform: translatey(-100%);
+  }
+}
+
+.voice-bg-img{
+  @include mq("pc-s"){
+    margin-left: 1rem;
+  }
+}
+
+.voice-bg-name{
+   @include mq("pc-s"){
+     margin-left: 1rem;
+   }
+}
+
+.voice-bg-common{
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: $color-sub;
+  color: #fff;
+}
+.voice-bg-work{
+  width: 120px;
+  font-size: 1.2rem;
+  margin-top: 52px;
+  @include mq("pc"){
+    margin-top: 20px;
+  }
+}
+
+.voice-bg-year{
+  width: 106px;
+  margin-top: 6px;
+}
+
+.voice-text{
+  position: absolute;
+  top: -78px;
+  right: 0;
+  width: 59.5%;
+  background-color: $color-sub;
+  color: #fff;
+  padding: 20px;
+  &::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 35px 25px 0 0;
+    border-color: #DE9C8F transparent transparent transparent;
+    bottom: -34px;
+    left: 50%;
+  }
+   @include mq("sp"){
+     width: 74%;
+     top: 0;
+     padding: 14px;
+   }
+}
+
+/*==============================================
+　訪問介護について
+==============================================*/
+
+.homevisitCare{
+  background: url(img/background.png) no-repeat center center / cover;
+  padding-top: 8rem;
+}
+
+.homevisitCare-content{
+  position: relative;
+  width: 88.6%;
+  margin: 0 auto;
+  @include mq("tab"){
+    width: 92%;
+  }
+}
+
+.homevisitCare-img{
+   width: 80%;
+   margin: 20px auto 0;
+}
+
+.homevisitCare-cloudleft-img{
+  position: absolute;
+  top: 0;
+  right: 17%;
+  animation-duration: 2s;
+     @include mq("pc-s"){
+       width: 10%;
+  }
+}
+
+.homevisitCare-cloud-right-img{
+  position: absolute;
+  top: 12%;
+  right: 0;
+  animation-duration: 2s;
+   @include mq("pc-s"){
+    width: 15%;
+  }
+}
+
+.homevisitCare-box-1{
+ width: 24.55%;
+ position: absolute;
+ top: 40%;
+ left: 0;
+ @include mq("pc-s"){
+   width: 26%;
+ }
+ @include mq("tab-s"){
+   position: relative;
+   width: 100%;
+   bottom: 0;
+ }
+}
+
+.homevisitCare-box-2{
+ width: 24.55%;
+ position: absolute;
+ bottom: 8%;
+ right: 0;
+  @include mq("pc-s"){
+    bottom: 4%;
+  }
+ @include mq("tab-s"){
+   position: relative;
+   width: 100%;
+   margin-top: 2rem;
+ }
+}
+
+.homevisitCare-title{
+  font-size: 2rem;
+  font-weight: bold;
+  @include mq("pc"){
+    font-size: 1.8rem;
+  } 
+}
+
+.homevisitCare-text{
+  font-size: 1.4rem;
+  font-family: $font-family-en;
+  margin-top: 1.5rem;
+  line-height: 1.65;
+  @include mq("tab-s"){
+    margin-top: 0.5rem;
+  }
+  @include mq("sp"){
+    margin-top: 0;
+  }
+}
+
+.homevisitCare-title-br{
+  @include mq("tab-s"){
+    display: none;
+  }
+}
+
+/*==============================================
+　訪問エリア
+==============================================*/
+
+.vsitArea{
+  background: url(img/background.png) no-repeat center center / cover;
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+  @include mq("sp"){
+    padding-bottom: 6rem;
+  }
+}
+.vsitArea-map{
+  border-radius: 64px;
+  border: 18px solid #fff;
+  width: 60%;
+  overflow: hidden;
+  margin: 6rem auto 0;
+  position: relative;
+  &::after{
+    position: absolute;
+    content: "";
+    background-color: #E4DED0;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+   @include mq("sp-l"){
+     width: 80%;
+   }
+   img{
+    width: 100%;
+  }
+}
+
+/*==============================================
+　日記
+==============================================*/
+
+.diary{
+  padding: 7.3rem 6.4rem 12rem;
+  border-left: 3px solid #EBEBEB;
+  @include mq("tab"){
+    border: #fff;
+    padding: 7.3rem 6.4rem 8rem;
+   }
+   @include mq("sp"){
+     padding: 6rem 3rem 6rem;
+   }
+  .section-title-jp{
+    text-align: left;
+    span{
+      font-family: $font-family-en;
+      font-weight: bold;
+      color: $color-sub;
+      font-size: 16px;
+      margin-left: 16px;
+    }
+  }
+}
+
+.diary-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 6rem;
+  @include mq("tab"){
+    display: block;
+  }
+}
+
+.diary-item{
+  width: calc((100% - 50px) / 2);
+  border-bottom: 1px solid #E4DED0;
+  padding-bottom: 2.4rem;
+  @include mq("tab"){
+    width: 100%;
+  }
+  a{
+    display: flex;
+    @include mq("sp"){
+      display: block;
+    }
+  }
+  &:nth-child(odd){
+    margin-right: 5rem;
+    @include mq("sp"){
+      margin-right: 0;
+    }
+  }
+  &:nth-child(n + 3){
+    margin-top: 3.2rem;
+    @include mq("sp"){
+      margin-top: 0;
+    }
+  }
+  &:nth-child(n + 2){
+    @include mq("tab"){
+      margin-top: 3.2rem;
+    }
+    @include mq("sp"){
+      margin-top: 2rem;
+    }
+  }
+}
+
+// どんなサイズの画像でも崩れなくする
+.diary-item-img{
+  width: 33.75%;
+  padding-top: 29.5%;
+  position: relative;
+  @include mq("sp"){
+    width: 100%;
+    padding-top: 87.5%;
+  }
+  img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.diary-item-body{
+  width: 66.25%;
+  padding-top: 2.7rem;
+  padding-left: 2.4rem;
+  @include mq("sp"){
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+.diary-item-body-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.diary-item-title{
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.diary-item-date{
+   font-size: 1.2rem;
+    font-weight: bold;
+    color: #E4DED0;
+    @include mq("pc-s"){
+      font-size: 1rem;
+    }
+}
+
+.diary-item-text{
+  font-size: 1.4rem;
+  @include mq("pc-s"){
+      font-size: 1.2rem;
+    }
+}
+
+.diary-link{
+  margin-top: 4rem;
+}
+
+
+/*==============================================
+　事業所紹介
+==============================================*/
+.business{
+   background: url(img/background.png) no-repeat center center / cover;
+  padding-top: 8rem;
+  padding-bottom: 12rem;
+  @include mq("sp"){
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+  }
+}
+
+.business-wrapper{
+  position: relative;
+}
+
+.business-content{
+  margin-left: 104px;
+  background-color: #fff;
+  border-radius: 40px;
+  width: 43.25%;
+  margin-left: 104px;
+  margin-top: 6rem;
+  padding: 4rem;
+  position: relative;
+  @include mq("pc"){
+    width: 55%;
+  }
+  @include mq("tab"){
+   width: 60%;
+  }
+  @include mq("tab-s"){
+     width: 76%;
+     margin: 6rem auto 0;
+  }
+  @include mq("sp-l"){
+    width: 90%;
+  }
+  @include mq("sp"){
+    padding: 2rem;
+  }
+  dl{
+    display: flex;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    &:nth-child(n + 2){
+     
+      border-top: 1px solid #E4DED0;
+    }
+    dt{
+      color: $color-active;
+      width: 83px;
+      font-weight: bold;
+      @include mq("sp"){
+        font-size: 1.4rem;
+      }
+    }
+    dd{
+      padding-left: 4rem;
+      width: calc(100% - 83px);
+      font-family: $font-family-en;
+      font-size: 1.4rem;
+      @include mq("sp"){
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+.business-wrapper-img{
+  position: absolute;
+  top: 0;
+  right: 80px;
+  width: 40.5%;
+  animation-duration: 2s;
+  @include mq("pc"){
+    width: 34%;
+  }
+  @include mq("tab"){
+    width: 30%;
+    right: 50px;
+  }
+  @include mq("sp-l"){
+    right: 0;
+  }
+  @include mq("sp"){
+    top: -45px;
+  }
+}
+
+.business-img{
+  border-radius: 64px;
+  border: 18px solid #fff;
+  width: 71%;
+  overflow: hidden;
+  margin: 6.4rem auto 0;
+   @include mq("sp-l"){
+     width: 90%;
+   }
+   img{
+    width: 100%;
+  }
+}
+
+/*==============================================
+　お問い合わせ
+==============================================*/
+
+.contact{
+  background: url(img/background.png) no-repeat center center / cover;
+  font-family: $font-family-en;
+  font-weight: bold;
+  padding-bottom: 264px;
+}
+
+.contact-text{
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 3.6rem;
+  @include mq("sp"){
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+  span{
+    color: $color-active;
+  }
+}
+
+.contact-wrapper{
+  width: 71%;
+  margin: 5.4rem auto 0;
+   @include mq("tab"){
+    width: 73%;
+   }
+   @include mq("sp"){
+     width: 90%;
+   }
+}
+
+.contact-form{
+  display: flex;
+  @include mq("tab-s"){
+    display: block;
+  }
+  &:nth-child(n + 2){
+    margin-top: 3.2rem;
+  }
+
+  label{
+    display: inline-block;
+    width: 210px;
+    span{
+      color: $color-active;
+    }
+  }
+  
+  input{
+    display: inline-block;
+    width: calc(100% - 0px);
+    background-color: #fff;
+    padding: 13px 24px;
+    font-weight: normal;
+    @include mq("tab-s"){
+      width: 100%;
+    }
+     &::placeholder {
+       color: #8E8E8E;
+     }
+  }
+
+  textarea{
+    width: 100%;
+    height: 240px;
+    background-color: #fff;
+    width: calc(100% - 0px);
+    resize: none;
+    padding: 13px 24px;
+    font-weight: normal;
+    @include mq("tab-s"){
+      width: 100%;
+    }
+  }
+}
+
+.contact-button{
+  position: relative;
+  width: 210px;
+  margin: 8rem auto 0;
+  transition: all 0.3s;
+  &:hover{
+    opacity: 0.8;
+  }
+  &::before{
+      position: absolute;
+      content: "";
+      background: url(img/arrow.png);
+      top: 33%;
+      transform: translateY(-50%);
+      left: 16px;
+      width: 16px;
+      height: 8px;
+    }
+    input{
+      display: block;
+      padding: 10px 70px;
+      color: #fff;
+      background-color: $color-active;
+      width: 100%;
+      transition: 0.3s;
+      border-radius: 30px;
+    }
+}
+
+/*==============================================
+　フッター
+==============================================*/
+
+.footer{
+  padding-top: 1.6rem;
+  padding-bottom: 4rem;
+  width: 82.43%;
+  margin-left: auto;
+  position: absolute;
+  height: 200px;
+  bottom: 0;
+  right: 0;
+  @include mq("tab"){
+      width: 100%;
+    }
+}
+
+.copyright{
+  font-family: $font-family-en;
+  font-size: 1.4rem;
+  margin-left: 64px;
+  margin-top: 120px;
+  @include mq("sp"){
+    margin-left: 0;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
+.page-top{
+  position: absolute;
+  right: 9rem;
+  top: 30px;
+   width: 16%;
+   animation-duration: 2s;
+  @include mq("tab-s"){
+    width: 20%;
+  }
+  @include mq("sp"){
+    width: 35%;
+    right: 3rem;
+  }
+}
+
+.footer-img{
+  position: absolute;
+  right: 0;
+  top: 1.6rem;
+  width: 8.8%;
+  animation-duration: 2s;
+  @include mq("tab-s"){
+    width: 11%;
+  }
+}
+
+/*==============================================
+ blog.html
+==============================================*/
+
+.blog-mv{
+  height: 300px;
+  background: url(img/background.png) no-repeat center center / cover;
+  position: relative;
+  width: 82.43%;
+  margin-left: auto;
+  overflow: hidden;
+  @include mq("tab"){
+    width: 100%;
+  }
+}
+
+.blog-mv-wrapper{
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  &::before{
+    position: absolute;
+    content: "";
+    background: url(img/mv-cloud-left.png) no-repeat center center / cover;
+    top: 103px;
+    left: 112px;
+    width: 178px;
+    height: 108px;
+    animation: fadeInDown 2s ease;
+    @include mq("tab-s"){
+      width: 140px;
+      height: 84px;
+      top: 36%;
+      left: 70px;
+    }
+    @include mq("sp"){
+      left: 10px;
+      width: 124px;
+      height: 74px;
+    }
+  }
+  &::after{
+    position: absolute;
+    content: "";
+    background: url(img/mv-cloud-right.png) no-repeat center center / cover;
+    top: 148px;
+    left: 67%;
+    width: 178px;
+    height: 108px;
+     animation: fadeInRight 2s ease;
+    @include mq("tab"){
+      width: 123px;
+      height: 74px;
+      top: 180px;
+    }
+    @include mq("sp"){
+      top: 196px;
+      width: 110px;
+      height: 65px;
+    }
+  }
+}
+
+.blog-mv-title{
+  display: inline-block;
+  position: relative;
+  font-size: 4.4rem;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &::before{
+    position: absolute;
+    content: "";
+    background: url(img/mv-cloud-center.png) no-repeat center center / contain;
+    top: -77px;
+    left: -208px;
+    width: 120px;
+    height: 73px;
+    animation: fadeInDown 3s ease ;
+    @include mq("pc-s"){
+      width: 86px;
+      height: 40px;
+      left: -126px;
+    }
+    @include mq("tab-s"){
+      left: -74px;
+    }
+    @include mq("sp"){
+      left: -20px;
+      top: -54px;
+    }
+  }
+  &::after{
+    position: absolute;
+    content: "";
+    background: url(img/diary.png) no-repeat center center / cover;
+    bottom: -26px;
+    left: 58px;
+    width: 90px;
+    height: 51px;
+     animation: swing 2s ease 3s;
+    @include mq("sp"){
+      width: 70px;
+    }
+  }
+}
+
+.blog{
+  padding: 21px 64px 320px;
+  border-left: 3px solid #EBEBEB;
+   @include mq("tab"){
+     padding: 21px 40px 320px;
+     border: #fff;
+   }
+    @include mq("tab-s"){
+      padding: 21px 20px 320px;
+    }
+  .section-title-jp{
+    margin-top: 73px;
+    text-align-last: left;
+    span{
+      font-size: 1.8rem;
+      margin-left: 12px;
+    }
+  }
+}
+
+.breadcrumb-link{
+  font-size: 1.2rem;
+  padding-right: 23px;
+}
+
+.link-active{
+  font-size: 1.2rem;
+  display: inline-block;
+  position: relative;
+   &::before{
+    position: absolute;
+    content: "/";
+    left: -16px;
+    top: 0;
+  }
+}
+
+.blog-list{
+  margin-top: 6rem;
+}
+
+.blog-item{
+  padding-bottom: 4rem;
+  border-bottom: 1px solid #E4DED0;
+  & + &{
+    padding-top: 4rem;
+  }
+ a{
+    display: flex;
+    @include mq("sp-l"){
+      display: block;
+  }
+ }
+}
+
+// どんなサイズの画像でも崩れなくする
+.blog-item-img{
+  width: 32%;
+  padding-top: 20%;
+  position: relative;
+  @include mq("tab-s"){
+    width: 36%;
+  }
+   @include mq("sp-l"){
+    width: 80%;
+    padding-top: 63%;
+   }
+  @include mq("sp"){
+    width: 100%;
+    padding-top: 87.5%;
+  }
+    img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.blog-item-body{
+  width: 60%;
+  margin-left: 4%;
+  margin-right: 4%;
+  @include mq("tab-s"){
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  @include mq("sp-l"){
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+.blog-item-date{
+   font-size: 1.2rem;
+   color: #E4DED0;
+   margin-top: 2rem;
+}
+
+.blog-item-title{
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+.blog-item-text{
+  font-size: 1.4rem;
+  line-height: 1.75;
+  margin-top: 1rem;
+}
+
+.blog-footer{
+  background: url(img/background.png) no-repeat center center / cover;
+}
+.prev a::before {
+  background: url(img/arrow_left.png);
+}
+.wpcf7-form-control-wrap {
+  width: 100%;
+}
+
