@@ -1,3 +1,7 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -12,7 +16,6 @@ a:hover {
     font-size: 32px;
     height: 70px;
     background-color: #F3F1EB;
-    margin-top: -32px;
 }
 
 @media screen and ( max-width: 782px) {
@@ -93,7 +96,7 @@ a:hover {
     position: absolute;
     background-color: #F3F1EB;
     top: 40vw;
-    right: 8vw;
+    right: 4vw;
     width: 15vw;
     height: 7vw;
     font-weight: 500;
@@ -113,6 +116,7 @@ a:hover {
 
 .problems-area {
     margin-top: 6vw;
+    margin-bottom: 6vw;
 }
 
 .problems-area h2 {
@@ -123,14 +127,14 @@ a:hover {
     color: #7CC6AB;
 }
 
-.lp-caption{
+.lp-caption {
     font-size: 2.2vw;
-    font-weight:700;
+    font-weight: 700;
 }
 
 .problem-row .card-title {
-    font-size: 1vw;
-    color:#333333;
+    font-size: 1.5vw;
+    color: #333333;
     height: 2.5em;
 }
 
@@ -138,14 +142,188 @@ a:hover {
     width: 122px
 }
 
-.problem-card-image{
-    margin-top:1vw
+.problem-card-image {
+    margin-top: 1vw
 }
 
 .problem-row .col-3:not(:last-child) {
     border-right: 3px dashed #888888;
 }
 
-.problem-row .card{
-    border:none;
+.problem-row .card {
+    border: none;
+}
+
+.features-area {
+    background-color: #F3F1EB;
+    padding-bottom: 2vw;
+}
+
+.fature-caption {
+    width: 60%;
+    margin: 0 auto;
+    border: 3px solid #7CC6AB;
+    padding: 9px;
+    color: #7CC6AB;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.features-area h2 {
+    font-weight: 400;
+    font-size: 2.5vw;
+    line-height: 4vw;
+    text-align: center;
+    color: #7CC6AB;
+    margin-top: 5vw;
+}
+
+.feature-title {
+    font-size: 2.5vw;
+    font-weight: 800;
+    margin-left: 6vw;
+    margin-top: 3vw;
+    color: #333333;
+}
+
+.feature-sentence {
+    font-size: 1.1vw;
+    font-weight: 400;
+    margin-left: 6vw;
+    margin-top: 0.5vw;
+    color: #333333;
+}
+
+.whvc-area {
+    background-color: #FFF;
+}
+
+.whvc-area h2 {
+    font-weight: 400;
+    font-size: 2.5vw;
+    line-height: 4vw;
+    text-align: center;
+    color: #7CC6AB;
+    margin-top: 5vw;
+}
+
+.whvc-title {
+    position: relative;
+    width: 15vw;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #7CC6AB;
+    color: #FFFFFF;
+    font-weight: 800;
+    padding: 1vw;
+    font-size: 1.5vw;
+    border-radius: 2vw;
+    z-index: 10;
+}
+
+.whvc-img {
+    position: relative;
+    width: 15vw;
+    margin: 0 auto;
+    margin-top: 2vw;
+    z-index: 10;
+}
+
+.whvc-square {
+    background-color: #F3F1EB;
+    height: 18vw;
+    position: relative;
+    z-index: 0;
+    width: 25vw;
+    margin: 0 auto;
+    top: -37vw;
+    border-radius: 2vw;
+}
+
+.whvc-caption {
+    margin: 0 auto;
+    margin-top: 2vw;
+    text-align: center;
+    font-size: 1.3vw;
+    font-weight: 800;
+}
+
+.whvc-sentence {
+    width: 22vw;
+    margin: 1vw auto;
+    font-size: 1.1vw;
+    height: 10vw;
+}
+
+.whvc-last-sentence {
+    width: 60%;
+    margin: 0 auto;
+    border: 3px solid #7CC6AB;
+    padding: 1.5vw;
+    color: #FFFFFF;
+    background-color: #7CC6AB;
+    text-align: center;
+    font-size: 1.8vw;
+    font-weight: 800;
+}
+
+.voice-area {
+    background-color: #F3F1EB;
+}
+
+.voice-area h2 {
+    font-weight: 400;
+    font-size: 2.5vw;
+    line-height: 4vw;
+    text-align: center;
+    color: #7CC6AB;
+}
+
+.staff-1 {
+    background-position-x: 13vw;
+    background-position-y: 2vw;
+    background-size: 12vw;
+    height: 23vw;
+    margin-left: 15vw;
+}
+
+.staff-2 {
+    background-position-x: 13vw;
+    background-position-y: 2vw;
+    background-size: 12vw;
+    height: 23vw;
+}
+
+.staff-img {
+    border-radius: 50%;
+    width: 15vw;
+}
+
+.staff-title {
+    position: relative;
+    top: -17vw;
+    left: 14vw;
+    font-size: 1.2vw;
+    font-weight: 800;
+    line-height: 2rem;
+}
+
+.staff-sentence {
+    position: relative;
+    top: -16vw;
+    left: 16vw;
+    font-size: 1vw;
+    line-height: 2rem;
+    width: 22vw;
+}
+
+.staff-name {
+    margin-top: 1vw;
+    font-size: 1.2vw;
+    margin-left: 3.5vw;
+}
+
+.staff-age {
+    font-size: 1vw;
+    margin-left: 4.2vw;
 }
