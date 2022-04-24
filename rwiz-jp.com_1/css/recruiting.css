@@ -15,7 +15,7 @@ a:hover {
     width: 100%;
     font-size: 32px;
     height: 70px;
-    background-color: #f3ebeb;
+    background-color: #f3f3eb;
 }
 
 @media screen and ( max-width: 782px) {
