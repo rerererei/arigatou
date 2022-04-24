@@ -23,7 +23,7 @@
         <div style="font-weight: 700;font-size: 2.2vw;line-height: 5vw;">横須賀市・三浦市の訪問介護</div>
         <div style="font-weight: 700;font-size: 4.2vw;line-height: 5vw;">登録ヘルパーで自由な働き方を</div>
         <div style="font-weight: 400;font-size: 2.2vw;line-height: 5vw;">夜勤なし・シフト制で<span style="font-weight: 800;font-size: 3vw;line-height: 5vw;color:#7CC6AB;">時給<span style="font-size:1.3em;font-weight: 400;">1,600</span>円</span>から</div>
-        <div class="btn mt-5" style="width: 25vw;height: 4vw;border-radius: 100px;background-color:#FF8D23;font-weight: 700;font-size: 2vw;color:#FFF">お問い合わせ</div>
+        <div class="btn mt-5" style="width: 25vw;height: 4vw;border-radius: 100px;background: linear-gradient(180deg, #FF8D23 0%, #E97710 100%);box-shadow: 0px 4px 15px rgba(106, 106, 106, 0.51);font-weight: 700;font-size: 2vw;color:#FFF">お問い合わせ</div>
     </div>  
 </div>
 <div class="jokin">常勤も<br>OK</div>
@@ -83,7 +83,7 @@
         <div class="text-center lp-caption fature-caption">『訪問介護のありがとう』なら..</div>
     </div>
     <h2>features</h2>
-    <div class="text-center mt-3 mb-3" style="font-size:3vw;font-weight: 700;">働きやすいから選ばれる！３つの特徴</div>
+    <div class="text-center mt-3 mb-3 lp-caption">働きやすいから選ばれる！３つの特徴</div>
     <div class="row bg-white" style="width:75%;margin: 2vw auto;margin-bottom: 0.3vw;border-radius: 1vw 1vw 0 0;">
         <div class="col-8" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/feature-num1.png);background-position-x: 3vw;background-position-y: 1vw;background-size: 8vw;">
             <div class="feature-title">働きたい時間に、働きたいだけ</div>
@@ -119,7 +119,7 @@
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/wave-top.png" style="width: 100%;">
     </div>
     <h2>what home visit care</h2>
-    <div class="text-center mt-3 mb-3" style="font-size:3vw;font-weight: 700;">訪問介護ってどんなことをするの？</div>
+    <div class="text-center mt-3 mb-3 lp-caption">訪問介護ってどんなことをするの？</div>
     <div class="row bg-white" style="width:75%;margin: 2vw auto;margin-bottom: 0.3vw;border-radius: 1vw 1vw 0 0;">
         <div class="col-6" style="height: 39vw;">
             <div class="whvc-title">身体介護</div>
@@ -146,19 +146,163 @@
 <!-- voice-->
 <div class="voice-area">
     <h2>voice</h2>
-    <div class="text-center mt-3 mb-5" style="font-size:3vw;font-weight: 700;">実際に働いているスタッフの声</div>
-    <div class="w-50 staff-1" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/voice-bg1.png);">
+    <div class="text-center mt-3 mb-5 lp-caption">実際に働いているスタッフの声</div>
+    <div class="staff-1" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/voice-bg1.png);">
         <img class="staff-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/voice-1_2.png">
         <div class="staff-name">有光 貴美子さん</div>
         <div class="staff-age">経験年数12年</div>
         <div class="staff-title">同じ業務内容で給与が1.5倍に！<br>新しいことへのチャレンジも<br>できる環境です</div>
         <div class="staff-sentence">今まで自分の行なっていたことを高く会社に評価してもらい、業務内容は変わらないのに給与が1.5倍以上になりました♪<br>その中で経験を活かしてもう一段上のことにもチャレンジできるので新しいステップアップの形が見えました！！</div>
     </div>
-    <div class="w-50 staff-2" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/voice-bg2.png);">
-        <img class="staff-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/voice-2_2.png">
+    <div class="staff-2" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/voice-bg2.png);">
+        <div class="staff-block">
+            <img class="staff-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/voice-2_2.png">
+            <div class="staff-name">鈴木 典子さん</div>
+            <div class="staff-age">経験年数9年</div>
+        </div>    
+        <div class="staff-title2">伸び伸びと仕事ができ、<br>思い通りのライフプラン形成が<br>できています</div>
+        <div class="staff-sentence2">介護業界に携わって得た経験をこちらの事業所で柔軟に伸び伸びと活かさせていただいております！<br>毎日たくさんの利用者様に”ありがとう”を言っていただけて、それが給与面にしっかり反映されているので『良いライフプラン形成』ができております♪</div>
     </div>
 </div>
-
+<!-- requruite-->
+<div class="requruite-area">
+    <h2>recruitment</h2>
+    <div class="text-center mt-3 mb-5 lp-caption">募集職種・募集要項</div>
+    <div class="text-center mt-5 mb-5" style="font-size: 1.5vw;font-weight: 400;">生活スタイルに合わせて、2つの働き方から選択できます。</div>
+    <div class="row">
+        <div class="col-6">
+            <div class="requruite-btn active toroku-btn" style="margin-left:auto;">登録ヘルパー</div>
+            <span class="requruite-btn-arrow-left toroku-arrow">
+                <img class="requruite-btn-arrow-top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/Polygon7.png" >
+            </span>
+        </div>
+        <div class="col-6">
+            <div class="requruite-btn jokin-btn" style="margin-right:auto;">常勤ヘルパー</div>
+            <span class="requruite-btn-arrow jokin-arrow" style="display:none;">
+                <img class="requruite-btn-arrow-top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/Polygon7.png" >
+            </span>
+        </div>
+        <div class="requruite-toroku">
+            <div class="text-center mt-3" style="font-size: 1.5vw;font-weight: 400;">まずは登録のみからでOK！</div>
+            <div class="text-center mt-3 mb-5" style="font-size: 1.5vw;font-weight: 400;">事前に頂いている希望のエリアや時間帯などから、<br>条件に合いそうなサービスを随時ご紹介させていただきます。</div>
+            <div class="reqruite-info">
+                <table class="requruite-info-table">
+                    <tr>
+                        <th><div class="requruite-table-head">給与</div></td>
+                        <td>時給1,600円～2,100円</td>
+                    </tr>
+                    <tr>
+                        <th><div class="requruite-table-head">勤務時間</div></td>
+                        <td>8:00〜20:00の間で週1回・1時間から調整できます！<br>休日の設定も自由です。</td>
+                    </tr>
+                    <tr>
+                        <th><div class="requruite-table-head">勤務エリア</div></td>
+                        <td>横須賀市・三浦市 全般</td>
+                    </tr>
+                    <tr>
+                        <th><div class="requruite-table-head">求める人材</div></td>
+                        <td>未経験の方も大歓迎です！<br>初任者研修・介護福祉士資格をお持ちの方は優遇させていただきます！</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="requruite-jokin" style="display:none">
+            <div class="text-center mt-3" style="font-size: 1.5vw;font-weight: 400;">まずは登録のみからでOK！</div>
+            <div class="text-center mt-3 mb-5" style="font-size: 1.5vw;font-weight: 400;">事前に頂いている希望のエリアや時間帯などから、<br>条件に合いそうなサービスを随時ご紹介させていただきます。</div>
+            <div class="reqruite-info">
+                <table class="requruite-info-table">
+                    <tr>
+                        <th><div class="requruite-table-head">給与</div></td>
+                        <td>時給1,600円～2,100円</td>
+                    </tr>
+                    <tr>
+                        <th><div class="requruite-table-head">勤務時間</div></td>
+                        <td>8:00〜20:00の間で週1回・1時間から調整できます！<br>休日の設定も自由です。</td>
+                    </tr>
+                    <tr>
+                        <th><div class="requruite-table-head">勤務エリア</div></td>
+                        <td>横須賀市・三浦市 全般</td>
+                    </tr>
+                    <tr>
+                        <th><div class="requruite-table-head">求める人材</div></td>
+                        <td>未経験の方も大歓迎です！<br>初任者研修・介護福祉士資格をお持ちの方は優遇させていただきます！</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- contact-->
+<div class="contact-area bg-image" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/contact-bg.png);">
+    <div class="contact-area bg-color">
+        <div class="text-center mt-5 mb-1" style="font-size:1.5vw;font-weight: 700;">ヘルパーへの登録・その他の職種へのご応募については</div>
+        <div class="text-center mb-5" style="font-size: 2vw;font-weight: 700;">まずはこちらよりお気軽にお問い合わせください！</div>
+        <div class="text-center" style="font-size: 1.5vw;font-weight: 400;">「具体的にどんなお仕事があるか気になる...」</div>
+        <div class="text-center" style="font-size: 1.5vw;font-weight: 400;">「私でもできる仕事あるかな...？」</div>
+        <div class="text-center" style="font-size: 1.5vw;font-weight: 400;">などのご質問もお受けしております！</div>
+        <div class="text-center mt-5 contact-btn" style="font-size: 1.5vw;font-weight: 400;">Webから応募・問い合わせ</div>
+    </div>
+</div>
+<!-- flow-->
+<div class="flow-area">
+    <h2>flow</h2>
+    <div class="text-center mt-3 mb-5 lp-caption">登録からお仕事までの流れ</div>
+    <div class="row justify-content-center p-5 m-1">
+        <div class="col-3 flow-block">
+            <div class="flow-title">①応募・問い合わせ</div>
+            <div class="flow-sentence">Webもしくはお電話からご応募・お問い合わせください。</div>
+        </div>
+        <div class="col-1 flow-arrow">
+            <img class="flow-arrow-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/Polygon7.png" >
+        </div>
+        <div class="col-3 flow-block">
+            <div class="flow-title">②業務説明・ヒアリング</div>
+            <div class="flow-sentence">衣笠の事業所にてご面談とご説明を行います。また、ご希望の条件をお伺いし、随時サービスをご紹介します。</div>
+        </div>
+        <div class="col-1 flow-arrow">
+            <img class="flow-arrow-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/Polygon7.png" >
+        </div>
+        <div class="col-3 flow-block">
+            <div class="flow-title">③お仕事開始</div>
+            <div class="flow-sentence">働きたい仕事が見つかり次第お仕事開始です。初回や困った時には、弊社社員も同行しますのでご安心ください。</div>
+        </div>
+    </div>
+    <div class="footer-drawer"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/drawer.png"></div>
+</div>
+<!-- ContactForm -->
+<div class="form-area">
+    <h2>form</h2>
+    <div class="text-center mt-3 mb-5 lp-caption">お問い合わせフォーム</div>
+    <div style="width: 70vw;margin: 0 auto;">
+        <?php echo do_shortcode('[contact-form-7 id="11" title="採用ページ問い合わせ"]'); ?>
+    </div>
+</div>
+<!-- company-->
+<div class="company-area">
+    <h2>company</h2>
+    <div class="text-center mt-3 mb-5 lp-caption">登録からお仕事までの流れ</div>
+    <div class="row justify-content-center p-5 m-1">
+        <div class="col-3 flow-block">
+            <div class="flow-title">①応募・問い合わせ</div>
+            <div class="flow-sentence">Webもしくはお電話からご応募・お問い合わせください。</div>
+        </div>
+        <div class="col-1 flow-arrow">
+            <img class="flow-arrow-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/Polygon7.png" >
+        </div>
+        <div class="col-3 flow-block">
+            <div class="flow-title">②業務説明・ヒアリング</div>
+            <div class="flow-sentence">衣笠の事業所にてご面談とご説明を行います。また、ご希望の条件をお伺いし、随時サービスをご紹介します。</div>
+        </div>
+        <div class="col-1 flow-arrow">
+            <img class="flow-arrow-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/Polygon7.png" >
+        </div>
+        <div class="col-3 flow-block">
+            <div class="flow-title">③お仕事開始</div>
+            <div class="flow-sentence">働きたい仕事が見つかり次第お仕事開始です。初回や困った時には、弊社社員も同行しますのでご安心ください。</div>
+        </div>
+    </div>
+    <div class="footer-drawer"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/drawer.png"></div>
+</div>
 
 </body>
 </html>

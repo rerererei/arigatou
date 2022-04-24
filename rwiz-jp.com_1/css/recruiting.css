@@ -114,6 +114,12 @@ a:hover {
     top: 48vw;
 }
 
+.footer-drawer {
+    position: relative;
+    width: 60vw;
+    left: 35vw;
+}
+
 .problems-area {
     margin-top: 6vw;
     margin-bottom: 6vw;
@@ -264,11 +270,12 @@ a:hover {
     background-color: #7CC6AB;
     text-align: center;
     font-size: 1.8vw;
-    font-weight: 800;
+    font-weight: 500;
 }
 
 .voice-area {
     background-color: #F3F1EB;
+    padding-bottom: 3vw;
 }
 
 .voice-area h2 {
@@ -288,7 +295,7 @@ a:hover {
 }
 
 .staff-2 {
-    background-position-x: 13vw;
+    background-position-x: 57vw;
     background-position-y: 2vw;
     background-size: 12vw;
     height: 23vw;
@@ -303,18 +310,47 @@ a:hover {
     position: relative;
     top: -17vw;
     left: 14vw;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     font-weight: 800;
-    line-height: 2rem;
+    line-height: 1.6vw;
+    letter-spacing: 0.2rem;
+    width: 47vw;
+}
+
+.staff-title2 {
+    position: relative;
+    top: -17vw;
+    left: 45vw;
+    font-size: 1.5vw;
+    font-weight: 800;
+    line-height: 1.6vw;
+    letter-spacing: 0.2rem;
+    width: 47vw;
 }
 
 .staff-sentence {
     position: relative;
     top: -16vw;
-    left: 16vw;
+    left: 18vw;
     font-size: 1vw;
     line-height: 2rem;
     width: 22vw;
+}
+
+.staff-sentence2 {
+    position: relative;
+    top: -16vw;
+    left: 45vw;
+    font-size: 1vw;
+    line-height: 2rem;
+    width: 23vw;
+}
+
+.staff-block {
+    position: relative;
+    top: 1vw;
+    left: 67vw;
+    width: 20vw;
 }
 
 .staff-name {
@@ -326,4 +362,214 @@ a:hover {
 .staff-age {
     font-size: 1vw;
     margin-left: 4.2vw;
+}
+
+.requruite-area {
+    border: 17px solid #c21500;
+    border-image: linear-gradient(to bottom, rgba(124, 198, 171, 1) 0%, rgba(124, 198, 171, 0.4) 100%);
+    border-image-slice: 1;
+}
+
+.requruite-area h2 {
+    font-weight: 400;
+    font-size: 2.5vw;
+    line-height: 4vw;
+    text-align: center;
+    color: #7CC6AB;
+}
+
+.requruite-btn {
+    position: relative;
+    width: 17vw;
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 800;
+    color: #333333;
+    background-color: #FFFFFF;
+    padding: 0.5vw;
+    border: solid 1px #333333;
+    border-radius: 2vw;
+    z-index: 10;
+}
+
+.requruite-btn.active {
+    color: #FFF;
+    background-color: #7CC6AB;
+    border: none;
+}
+
+.requruite-btn-arrow {
+    position: relative;
+    top: -2.5vw;
+    left: 7.5vw;
+}
+
+.requruite-btn-arrow-left {
+    position: relative;
+    top: -2.5vw;
+    left: 38.5vw;
+}
+
+.requruite-btn-arrow-top {
+    transform: rotate(330deg);
+    width: 2.7vw;
+    z-index: 0;
+}
+
+.requruite-info-table {
+    width: 65vw;
+    margin: 0 auto;
+    border: solid 1px #333333;
+    border-radius: 2vw;
+    border-collapse: separate;
+    padding: 2vw;
+    margin-bottom: 3vw;
+}
+
+.requruite-info-table .requruite-table-head {
+    font-size: 1.7vw;
+    font-weight: 500;
+    width: 13vw;
+    background-color: #333333;
+    text-align: center;
+    margin: 0 auto;
+    color: #FFF;
+    border-radius: 5vw;
+    padding: 0.3vw;
+}
+
+.requruite-info-table tr {
+    height: 6vw;
+}
+
+.requruite-info-table th {
+    width: 20vw;
+}
+
+.requruite-info-table td {
+    font-size: 1.2vw;
+}
+
+.contact-area.bg-image {
+    height: 32vw;
+    background-size: 100%;
+}
+
+.contact-area.bg-color {
+    height: 32vw;
+    background: #F3F1EB6B;
+    padding-top: 2vw;
+}
+
+.contact-area .contact-btn {
+    font-size: 1.5vw;
+    font-weight: 400;
+    width: 28vw;
+    margin: 0 auto;
+    background: #FFFFFF;
+    color: #FFFFFF;
+    font-weight: 700;
+    background: linear-gradient(180deg, #FF8D23 0%, #E97710 100%);
+    box-shadow: 0px 4px 16px rgb(106 106 106 / 50%);
+    border-radius: 100px;
+    padding: 1.5vw;
+}
+
+.flow-area {
+    background-color: #FFF;
+    padding-bottom: 10vw;
+}
+
+.flow-area h2 {
+    font-weight: 400;
+    font-size: 2.5vw;
+    line-height: 4vw;
+    text-align: center;
+    color: #7CC6AB;
+}
+
+.flow-block {
+    height: 12vw;
+    background-color: #F3F1EB;
+    box-shadow: 2px 3px 11px rgba(147, 147, 147, 0.25);
+    padding: 2vw 1vw;
+    width: 20vw;
+    border-radius: 1vw;
+}
+
+.flow-title {
+    font-size: 1.5vw;
+    font-weight: 700;
+    text-align: center;
+}
+
+.flow-sentence {
+    margin-top: 1vw;
+    font-size: 1vw;
+}
+
+.flow-arrow {
+    margin-top: 5vw;
+    text-align: center;
+}
+
+.flow-arrow-img {
+    width: 1.5vw
+}
+
+.form-area h2 {
+    font-weight: 400;
+    font-size: 2.5vw;
+    line-height: 4vw;
+    text-align: center;
+    color: #7CC6AB;
+}
+
+.form-area {
+    background-color: #F3F1EB;
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+    margin-top: -15vw;
+}
+
+.contact-button {
+    margin: 1rem auto 0;
+}
+
+.contact-button::before {
+    position: absolute;
+    content: "";
+    background: url(../img/Polygon9.png);
+    top: 2.7vw;
+    left: 15vw;
+    width: 137%;
+    background-size: 0.9vw;
+    background-repeat: no-repeat;
+    height: 1vw;
+}
+
+.contact-button input {
+    background: linear-gradient(180deg, #FF8D23 0%, #E97710 100%);
+    box-shadow: 0px 4px 16px rgb(106 106 106 / 50%);
+    border-radius: 2vw;
+    padding: 1.5vw 3vw;
+    font-size: 1.5vw;
+}
+
+.contact-form:nth-child(n + 2) {
+    margin-top: 2.2rem;
+}
+
+.company-area h2 {
+    font-weight: 400;
+    font-size: 2.5vw;
+    line-height: 4vw;
+    text-align: center;
+    color: #7CC6AB;
+}
+
+.company-area {
+    background-color: #FFF;
+    padding-top: 3vw;
+    padding-bottom: 6vw;
 }
