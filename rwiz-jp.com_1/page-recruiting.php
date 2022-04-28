@@ -280,7 +280,7 @@
 <!-- company-->
 <div class="company-area">
     <h2>company</h2>
-    <div class="text-center mt-3 mb-5 lp-caption">登録からお仕事までの流れ</div>
+    <div class="text-center mt-3 mb-5 lp-caption">登録からお仕事までの流れtest</div>
     <div class="row justify-content-center p-5 m-1">
         <div class="col-3 flow-block">
             <div class="flow-title">①応募・問い合わせ</div>
