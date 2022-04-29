@@ -27,6 +27,20 @@ $(function() {
         $('.requruite-toroku').hide();
         $('.toroku-arrow').hide();
     });
+    $('.shintai-kaigo').click(function() {
+        $(this).addClass('active');
+        $('.seikatsu-enjo').removeClass('active');
+
+        $('.shintai-detail').show();
+        $('.seikatsu-detail').hide();
+    });
+    $('.seikatsu-enjo').click(function() {
+        $(this).addClass('active');
+        $('.shintai-kaigo').removeClass('active');
+
+        $('.seikatsu-detail').show();
+        $('.shintai-detail').hide();
+    });
 });
 
 

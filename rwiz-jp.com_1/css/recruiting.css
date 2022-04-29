@@ -134,7 +134,7 @@ a:hover {
 }
 
 .problem-row .card-title {
-    font-size: 1.5vw;
+    font-size: 2vw;
     color: #333333;
     height: 2.5em;
 }
@@ -580,7 +580,7 @@ a:hover {
     font-size: 1.2vw;
 }
 
-.campanyu-info {
+.campany-info {
     font-size: 1vw;
 }
 
@@ -712,5 +712,413 @@ a:hover {
         position: absolute;
         z-index: 100;
         padding: 0;
+    }
+    .top-drawer {
+        width: 100vw;
+        position: absolute;
+        top: 138vw;
+    }
+    .problems-area {
+        margin-top: 10vw;
+        margin-bottom: 6vw;
+    }
+    .problems-area h2 {
+        font-weight: 400;
+        font-size: 5vw;
+        line-height: 4vw;
+        text-align: center;
+        color: #7CC6AB;
+    }
+    .lp-caption {
+        margin-top: 3vw;
+        font-size: 5vw;
+        font-weight: 700;
+        line-height: 6vw;
+    }
+    .problem-row img {
+        width: 20vw;
+    }
+    .problem-row .card-title {
+        font-size: 2vw;
+        color: #333333;
+        height: 2.5em;
+    }
+    .problem-card-image {
+        margin-top: 3vw;
+    }
+    .fature-caption {
+        width: 80vw;
+        margin: 0 auto;
+        border: 3px solid #7CC6AB;
+        padding: 3vw 0px;
+        color: #7CC6AB;
+        background-color: #FFFFFF;
+        position: relative;
+        top: -14vw;
+    }
+    .features-area h2 {
+        font-weight: 400;
+        font-size: 5vw;
+        line-height: 4vw;
+        text-align: center;
+        color: #7CC6AB;
+        margin-top: -1vw;
+    }
+    .feature-title {
+        width: 82vw;
+        font-size: 5vw;
+        font-weight: 800;
+        margin-left: 6vw;
+        margin-top: 3vw;
+        color: #333333;
+    }
+    .feature-sentence {
+        width: 82vw;
+        font-size: 3.5vw;
+        font-weight: 400;
+        margin-left: 6vw;
+        margin-top: 0.5vw;
+        color: #333333;
+    }
+    .feature-img {
+        width: 82vw;
+        margin: 3vw auto;
+        border-radius: 5vw;
+    }
+    .feature-head {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 1vw;
+        border-radius: 5vw 5vw 0 0;
+    }
+    .feature-first {
+        background-position-x: 4vw;
+        background-position-y: 4vw;
+        background-size: 18vw;
+    }
+    .feature-second {
+        background-position-x: 61vw;
+        background-position-y: 5vw;
+        background-size: 20vw;
+    }
+    .feature-third {
+        background-position-x: 3vw;
+        background-position-y: 2vw;
+        background-size: 26vw;
+    }
+    .contact-button::before {
+        position: absolute;
+        content: "";
+        background: url(../img/Polygon9.png);
+        top: 2.7vw;
+        left: 12vw;
+        background-size: 0.9vw;
+        background-repeat: no-repeat;
+        height: 1vw;
+    }
+    .whvc-area h2 {
+        font-weight: 400;
+        font-size: 5vw;
+        line-height: 4vw;
+        text-align: center;
+        color: #7CC6AB;
+        margin-top: 5vw;
+    }
+    .whvc-title {
+        position: unset;
+        width: 34vw;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #FFFFFF;
+        color: #333333;
+        font-weight: 500;
+        padding: 3vw;
+        font-size: 4vw;
+        border-radius: 6vw;
+        box-shadow: 0px 2px 4px rgba(153, 153, 153, 0.25);
+        border: 1px solid #888888;
+    }
+    .whvc-title.active {
+        position: unset;
+        width: 34vw;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #7CC6AB;
+        color: #FFFFFF;
+        font-weight: 500;
+        padding: 3vw;
+        font-size: 4vw;
+        border-radius: 6vw;
+        box-shadow: 0px 2px 4px rgba(153, 153, 153, 0.25);
+        border: 0;
+    }
+    .whvc-detail-area {
+        margin: 5vw 0;
+        background-color: #F5F5F5;
+        border-radius: 5vw;
+        padding: 5vw 0;
+    }
+    .whcv-img-sp {
+        width: 42vw;
+    }
+    .whvc-caption-sp {
+        margin-top: 3vw;
+        font-size: 4vw;
+        font-weight: 700;
+    }
+    .whvc-sentence-sp {
+        text-align: left;
+        width: 70vw;
+        margin: 0 auto;
+        margin-top: 2vw;
+        font-size: 2vw;
+    }
+    .whvc-last-sentence-sp {
+        text-align: center;
+        font-size: 4vw;
+        font-weight: 700;
+    }
+    .voice-area h2 {
+        font-weight: 400;
+        font-size: 5vw;
+        line-height: 4vw;
+        text-align: center;
+        color: #7CC6AB;
+    }
+    .staff-img {
+        border-radius: 50%;
+        width: 40vw;
+    }
+    .staff-title-sp {
+        font-size: 4vw;
+        font-weight: 700;
+        margin-top: 2vw;
+    }
+    .staff-sentence-sp {
+        width: 85vw;
+        margin: 0 auto;
+        text-align: left;
+        margin-top: 2vw;
+    }
+    .staff-1 {
+        background-position-x: 5vw;
+        background-position-y: 0vw;
+        background-size: 33vw;
+        height: 40vw;
+        margin-left: 15vw;
+    }
+    .staff-2 {
+        background-position-x: 47vw;
+        background-position-y: 0vw;
+        background-size: 37vw;
+        height: 38vw;
+    }
+    .staff-name {
+        font-size: 3vw;
+    }
+    .requruite-area {
+        border: 10px solid #c21500;
+        border-image: linear-gradient(to bottom, rgba(124, 198, 171, 1) 0%, rgba(124, 198, 171, 0.4) 100%);
+        border-image-slice: 1;
+    }
+    .requruite-area h2 {
+        margin-top: 8vw;
+        font-weight: 400;
+        font-size: 5vw;
+        line-height: 4vw;
+        text-align: center;
+        color: #7CC6AB;
+    }
+    .requruite-btn {
+        position: relative;
+        width: 35vw;
+        text-align: center;
+        font-size: 4vw;
+        font-weight: 800;
+        color: #333333;
+        background-color: #FFFFFF;
+        padding: 1.5vw;
+        border: solid 1px #333333;
+        border-radius: 5vw;
+        z-index: 10;
+        cursor: pointer;
+        height: 9vw;
+    }
+    .requruite-info-table {
+        width: 85vw;
+        margin: 0 auto;
+        border: solid 1px #333333;
+        border-radius: 6vw;
+        border-collapse: separate;
+        padding: 2vw;
+        margin-bottom: 3vw;
+    }
+    .requruite-info-table .requruite-table-head {
+        font-size: 1.7vw;
+        font-weight: 500;
+        background-color: #333333;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        color: #FFF;
+        border-radius: 5vw;
+        padding: 0.3vw;
+    }
+    .requruite-info-table tr {
+        height: 10vw;
+    }
+    .contact-area.bg-image {
+        height: 105vw;
+        background-size: 100%;
+    }
+    .contact-area.bg-color {
+        height: 105vw;
+        background: #F3F1EB6B;
+        padding-top: 2vw;
+    }
+    .contact-area .contact-btn-web {
+        font-size: 1.5vw;
+        font-weight: 400;
+        width: 68vw;
+        margin: 0 auto;
+        background: #FFFFFF;
+        color: #FFFFFF;
+        font-weight: 700;
+        background: linear-gradient(180deg, #FF8D23 0%, #E97710 100%);
+        box-shadow: 0px 4px 16px rgb(106 106 106 / 50%);
+        border-radius: 100px;
+        padding: 3.5vw;
+    }
+    .contact-area .contact-btn-tel {
+        font-size: 1.5vw;
+        font-weight: 400;
+        width: 68vw;
+        margin: 0 auto;
+        background: #FFFFFF;
+        color: #FFFFFF;
+        font-weight: 700;
+        background: linear-gradient(180deg, #72CCAC 0%, #65BB9C 100%);
+        box-shadow: 0px 5px 9px rgba(106, 106, 106, 0.25);
+        border-radius: 100px;
+        padding: 3.5vw;
+    }
+    .flow-area h2 {
+        font-weight: 400;
+        font-size: 5vw;
+        line-height: 4vw;
+        text-align: center;
+        color: #7CC6AB;
+    }
+    .flow-block-sp {
+        width: 90vw;
+        background: #F3F1EB;
+        border-radius: 5vw;
+        margin: 0 auto;
+        height: 37vw;
+    }
+    .flow-title {
+        font-size: 5vw;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 5vw;
+    }
+    .flow-sentence {
+        font-size: 3.5vw;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 3vw;
+    }
+    .flow-arrow-img {
+        width: 7vw;
+        margin: 3vw;
+    }
+    .footer-drawer_sp {
+        margin-top: 10vw;
+    }
+    .form-area h2 {
+        margin-top: 10vw;
+        font-weight: 400;
+        font-size: 5vw;
+        line-height: 4vw;
+        text-align: center;
+        color: #7CC6AB;
+    }
+    .contact-form label {
+        font-size: 4vw;
+        font-weight: 700;
+        width: 100%;
+    }
+    .contact-button input {
+        background: linear-gradient(180deg, #FF8D23 0%, #E97710 100%);
+        box-shadow: 0px 4px 16px rgb(106 106 106 / 50%);
+        border-radius: 10vw;
+        padding: 3vw;
+        font-size: 3vw;
+    }
+    .contact-button::before {
+        position: absolute;
+        content: "";
+        background: url(../img/Polygon9.png);
+        top: 6.5vw;
+        left: 43vw;
+        background-size: 2vw;
+        background-repeat: no-repeat;
+        height: 4vw;
+        width: 5vw;
+    }
+    .form-area {
+        background-color: #F5F5F5;
+        padding-top: 6vw;
+        padding-bottom: 10vw;
+        margin-top: -15vw;
+    }
+    .company-img {
+        border-radius: 6vw;
+        width: 90%;
+    }
+    .company-block {
+        width: 90%;
+        margin: 5vw auto;
+        border: 0.5px solid #888888;
+        border-radius: 4vw;
+        padding: 3vw 0;
+    }
+    .company-title {
+        color: #7CC6AB;
+        font-weight: 700;
+        font-size: 4vw;
+    }
+    .footer-area {
+        margin-top: 3vw;
+        height: 15vw;
+        background: #F5F5F5;
+        margin-bottom: 15vw;
+    }
+    .footerFix-sp {
+        width: 100%;
+        position: fixed;
+        top: calc(100vh - 15vw);
+        z-index: 9999;
+        margin: 0;
+    }
+    .footerFix-sp .contact-btn {
+        font-size: 4vw;
+        font-weight: 400;
+        color: #FFFFFF;
+        font-weight: 700;
+        background: linear-gradient(180deg, #FF8D23 0%, #E97710 100%);
+        box-shadow: 0px 4px 16px rgb(106 106 106 / 50%);
+        border-radius: 0.5vw;
+        padding: 1vw;
+    }
+    .footerFix-sp .tel-btn {
+        font-size: 4vw;
+        font-weight: 400;
+        color: #FFFFFF;
+        font-weight: 700;
+        background: linear-gradient(180deg, #72CCAC 0%, #65BB9C 100%);
+        box-shadow: 0px 4px 16px rgb(106 106 106 / 50%);
+        border-radius: 0.5vw;
+        padding: 1vw;
     }
 }
