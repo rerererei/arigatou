@@ -1,13 +1,13 @@
 <?php get_header(); ?>
 <!-- footer固定 -->
-<div class="footerFix row justify-content-end">
+<div class="footerFix row justify-content-end pcview">
     <div class="col-2 text-center contact-btn to-button" href="#contactForm" style="font-size: 1.5vw;font-weight: 400;margin-right: 1vw;">お問い合わせ</div>
-    <div class="col-2 text-center tel-btn" style="font-size: 1.5vw;font-weight: 400;"><a href="tel:08054005639">☎：080-5400-5639</a></div>
+    <div class="col-2 text-center tel-btn" style="font-size: 1.5vw;font-weight: 400;margin-right: 1vw;"><a href="tel:08054005639">☎電話お問い合わせ</a></div>
 </div>
 
 
 <!-- Head-->
-<div class="recruitHead row">
+<div class="recruitHead row pcview">
     <div class="col-2">
         <a href="<?php echo esc_url(home_url()); ?>">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/logo.png" width="50" style="margin-top: 15px;margin-left: 60px">
@@ -17,24 +17,52 @@
     <div class="recruitHeadContactTel">
             <div style="font-size:0.3em; font-weight:500;height: 5px;">お電話での問い合わせ</div>
             <div style="font-weight:900;height: 30px;"><a href="tel:08054005639">☎：080-5400-5639</a></div>
-            <div style="font-size:0.3em; font-weight:500;">※受付時間：8:00～18:00(土日祝を除く)</div>
+            <div style="font-size:0.3em; font-weight:500;">※受付時間：9:00～18:00(土日祝を除く)</div>
         </div>
         <div class="recruitHeadContact to-button" href="#contactForm">お問い合わせ</div>
     </div>
 </div>
-<!-- FirstView-->
-<div class="first-view"></div>
-<div class="first-view-grade">    
-    <div class="top-content">
-        <div style="font-weight: 700;font-size: 2.2vw;line-height: 5vw;">横須賀市・三浦市の訪問介護</div>
-        <div style="font-weight: 700;font-size: 4.2vw;line-height: 5vw;">登録ヘルパーで自由な働き方を</div>
-        <div style="font-weight: 400;font-size: 2.2vw;line-height: 5vw;">夜勤なし・シフト制で<span style="font-weight: 800;font-size: 3vw;line-height: 5vw;color:#7CC6AB;">時給<span style="font-size:1.3em;font-weight: 400;">1,600</span>円</span>から</div>
-        <div class="btn mt-5 to-button" href="#contactForm" style="width: 25vw;height: 4vw;border-radius: 100px;background: linear-gradient(180deg, #FF8D23 0%, #E97710 100%);box-shadow: 0px 4px 15px rgba(106, 106, 106, 0.51);font-weight: 700;font-size: 2vw;color:#FFF">お問い合わせ</div>
-    </div>  
+<div class="recruitHead row justify-content-between spview" style="margin-left: -1px;">
+    <div class="col-2">
+        <a href="<?php echo esc_url(home_url()); ?>">
+            <img class="head-logo-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/logo.png" width="50">
+        </a>    
+    </div>
+    <div class="col-3" style="padding: 0;margin-left: 1.6vw;">
+        <div class="recruitHeadContactTel">
+            <div style="font-size:0.3em;"><a href="tel:08054005639">☎電話問い合わせ</a></div>
+            <div style="font-size:0.3em;">※受付時間：9:00～18:00</div>
+        </div>
+    </div>
 </div>
-<div class="jokin">常勤も<br>OK</div>
-<div class="btn to-boshu to-button" href="#requruite">募集要項を見る<br><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/vector.png"></div>
-<div class="top-drawer"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/drawer.png"></div>
+<!-- FirstView-->
+<div class="first-view pcview">
+    <div class="first-view-grade">    
+        <div class="top-content">
+            <div style="font-weight: 700;font-size: 2.2vw;line-height: 5vw;">横須賀市・三浦市の訪問介護</div>
+            <div style="font-weight: 700;font-size: 4.2vw;line-height: 5vw;">登録ヘルパーで自由な働き方を</div>
+            <div style="font-weight: 400;font-size: 2.2vw;line-height: 5vw;">夜勤なし・シフト制で<span style="font-weight: 800;font-size: 3vw;line-height: 5vw;color:#7CC6AB;">時給<span style="font-size:1.3em;font-weight: 400;">1,600</span>円</span>から</div>
+            <div class="btn mt-5 to-button" href="#contactForm" style="width: 25vw;height: 4vw;border-radius: 100px;background: linear-gradient(180deg, #FF8D23 0%, #E97710 100%);box-shadow: 0px 4px 15px rgba(106, 106, 106, 0.51);font-weight: 700;font-size: 2vw;color:#FFF">お問い合わせ</div>
+        </div>  
+    </div>
+    <div class="jokin">常勤も<br>OK</div>
+    <div class="btn to-boshu to-button" href="#requruite">募集要項を見る<br><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/vector.png"></div>
+    <div class="top-drawer"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/drawer.png"></div>
+</div>
+<div class="first-view spview">
+    <div class="first-view-grade">    
+    </div>
+    <div class="top-content">
+        <div style="font-weight: 700;font-size: 5.2vw;line-height: 5vw;">横須賀市・三浦市の訪問介護</div>
+        <div style="font-weight: 700;font-size: 10vw;line-height: 10vw;margin-top: 3vw;">登録ヘルパーで<br>自由な働き方を</div>
+        <div style="font-weight: 400;font-size: 5vw;line-height: 8vw;margin-top: 3vw;">夜勤なし・シフト制で<br>
+        <span style="font-weight: 800;font-size: 7vw;line-height: 5vw;color:#7CC6AB;">時給<span style="font-size:1.3em;font-weight: 700;">1,600</span>円</span>から</div>
+        <div class="btn mt-5 to-button" href="#contactForm" style="width: 80vw;height: 15vw;border-radius: 100px;background: linear-gradient(180deg, #FF8D23 0%, #E97710 100%);box-shadow: 0px 4px 15px rgba(106, 106, 106, 0.51);font-size: 8vw;color:#FFF;margin: 4vw 4vw;">お問い合わせ</div>
+    </div>  
+    <div class="jokin">常勤も<br>OK</div>
+    <div class="btn to-boshu to-button" href="#requruite">募集要項を見る<br><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/vector.png"></div>
+    <div class="top-drawer"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/drawer.png"></div>
+</div>
 <!-- Problems-->
 <div class="problems-area">
     <h2>problems</h2>

@@ -28,3 +28,16 @@ $(function() {
         $('.toroku-arrow').hide();
     });
 });
+
+
+$(function() {
+    var windowSize = $(window).width();
+
+    if (windowSize < 960) {
+        $('.spview').show();
+        $('.pcview').hide();
+    } else {
+        $('.pcview').show();
+        $('.spview').hide();
+    }
+});
