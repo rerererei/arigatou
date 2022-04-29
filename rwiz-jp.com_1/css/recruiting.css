@@ -620,7 +620,7 @@ a:hover {
 .footerFix {
     width: 100%;
     position: fixed;
-    top: calc(100vh - 5vw);
+    top: calc(100vh - 7vw);
     z-index: 9999;
 }
 
@@ -670,6 +670,7 @@ a:hover {
         width: 40vw;
         float: right;
         margin-right: -1px;
+        padding-top: 5px;
     }
     .first-view {
         background: url(http://localhost:8001/wp-content/themes/rwiz-jp.com_1/img/recruit/first-view_sp.png);

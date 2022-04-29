@@ -1,11 +1,9 @@
 <?php get_header(); ?>
 <!-- footer固定 -->
 <div class="footerFix row justify-content-end pcview">
-    <div class="col-2 text-center contact-btn to-button" href="#contactForm" style="font-size: 1.5vw;font-weight: 400;margin-right: 1vw;">お問い合わせ</div>
-    <div class="col-2 text-center tel-btn" style="font-size: 1.5vw;font-weight: 400;margin-right: 1vw;"><a href="tel:08054005639">☎電話お問い合わせ</a></div>
+    <div class="col-2 text-center contact-btn to-button" href="#contactForm" style="font-size: 1.5vw;font-weight: 400;margin-right: 1vw;height: 6vw;line-height: 1vw;"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/web.png" style="width: 2.5vw;margin-bottom:5px;">WEBから<br>応募・問い合わせ</div>
+    <div class="col-2 text-center tel-btn" style="font-size: 1.5vw;font-weight: 400;margin-right: 1vw;height: 6vw;line-height: 1vw;"><a href="tel:08054005639"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/phone.png" style="width: 2.5vw;margin-bottom:5px;">電話から<br>応募・問い合わせ</a></div>
 </div>
-
-
 <!-- Head-->
 <div class="recruitHead row pcview">
     <div class="col-2">
@@ -16,7 +14,7 @@
     <div class="col-10" style="padding: 0;">
     <div class="recruitHeadContactTel">
             <div style="font-size:0.3em; font-weight:500;height: 5px;">お電話での問い合わせ</div>
-            <div style="font-weight:900;height: 30px;"><a href="tel:08054005639">☎：080-5400-5639</a></div>
+            <div style="font-weight:900;height: 30px;"><a href="tel:08054005639"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/phone.png" style="width: 2.5vw;margin-bottom:5px;">：080-5400-5639</a></div>
             <div style="font-size:0.3em; font-weight:500;">※受付時間：9:00～18:00(土日祝を除く)</div>
         </div>
         <div class="recruitHeadContact to-button" href="#contactForm">お問い合わせ</div>
