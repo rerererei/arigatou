@@ -1,4 +1,10 @@
 <?php get_header(); ?>
+<!-- footer固定 -->
+<div class="footerFix row justify-content-end">
+    <div class="col-2 text-center contact-btn to-button" href="#contactForm" style="font-size: 1.5vw;font-weight: 400;margin-right: 1vw;">お問い合わせ</div>
+    <div class="col-2 text-center tel-btn" style="font-size: 1.5vw;font-weight: 400;"><a href="tel:08054005639">☎：080-5400-5639</a></div>
+</div>
+
 
 <!-- Head-->
 <div class="recruitHead row">

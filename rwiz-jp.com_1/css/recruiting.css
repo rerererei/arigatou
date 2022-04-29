@@ -40,7 +40,8 @@ a:hover {
 
 .recruitHeadContactTel {
     height: 70px;
-    background-color: #FFF;
+    background-color: #7CC6AB;
+    color: #FFFFFF;
     font-size: 24px;
     text-align: center;
     padding-top: 10px;
@@ -542,7 +543,7 @@ a:hover {
     content: "";
     background: url(../img/Polygon9.png);
     top: 2.7vw;
-    left: 15vw;
+    left: 12vw;
     width: 137%;
     background-size: 0.9vw;
     background-repeat: no-repeat;
@@ -620,4 +621,35 @@ a:hover {
 
 .to-button {
     cursor: pointer;
+}
+
+.footerFix {
+    width: 100%;
+    position: fixed;
+    top: calc(100vh - 5vw);
+    z-index: 9999;
+}
+
+.footerFix .contact-btn {
+    font-size: 1.5vw;
+    font-weight: 400;
+    width: 18vw;
+    color: #FFFFFF;
+    font-weight: 700;
+    background: linear-gradient(180deg, #FF8D23 0%, #E97710 100%);
+    box-shadow: 0px 4px 16px rgb(106 106 106 / 50%);
+    border-radius: 100px;
+    padding: 1vw;
+}
+
+.footerFix .tel-btn {
+    font-size: 1.5vw;
+    font-weight: 400;
+    width: 18vw;
+    color: #FFFFFF;
+    font-weight: 700;
+    background: linear-gradient(180deg, #72CCAC 0%, #65BB9C 100%);
+    box-shadow: 0px 4px 16px rgb(106 106 106 / 50%);
+    border-radius: 100px;
+    padding: 1vw;
 }
