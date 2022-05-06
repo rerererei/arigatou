@@ -47,7 +47,7 @@ $(function() {
 $(function() {
     var windowSize = $(window).width();
 
-    if (windowSize < 960) {
+    if (windowSize < 700) {
         $('.spview').show();
         $('.pcview').hide();
     } else {
