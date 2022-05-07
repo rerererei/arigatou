@@ -1432,7 +1432,7 @@ h2:before {
     }
 }
 
-footer-area {
+.footer-area {
     margin-top: 3vw;
     height: 65px;
     background: #F3F1EB;
