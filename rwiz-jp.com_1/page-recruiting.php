@@ -4,10 +4,10 @@
     <div class="col-2 text-center contact-btn to-button" href="#contactForm"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/web.png" style="width: 30px;margin-bottom:5px;">WEBから<br>応募・問い合わせ</div>
     <div class="col-2 text-center tel-btn"><a href="tel:08054005639"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/phone.png" style="width: 30px;margin-bottom:5px;">電話から<br>応募・問い合わせ</a></div>
 </div>
-<!-- <div class="footerFix-sp row spview">
-    <div class="col-6 text-center contact-btn to-button" href="#contactForm"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/web.png" style="width: 30px;margin-bottom:5px;">WEBから<br>応募・問い合わせ</div>
-    <div class="col-6 text-center tel-btn"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/phone.png" style="width: 30px;margin-bottom:5px;">電話から<br>応募・問い合わせ</a></div>
-</div> -->
+<div class="footerFix-sp row spview">
+    <div class="col-6 text-center contact-btn to-button" href="#contactForm"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/web.png" style="width: 25px;margin-bottom:5px;">WEBから<br>応募・問い合わせ</div>
+    <div class="col-6 text-center tel-btn"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/phone.png" style="width: 25px;margin-bottom:5px;">電話から<br>応募・問い合わせ</a></div>
+</div>
 <!-- Head-->
 <div class="recruitHead row pcview">
     <div class="col-2">
@@ -30,10 +30,11 @@
             <img class="head-logo-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/logo.png">
         </a>    
     </div>
-    <div class="col-3" style="padding: 0;margin-left: 1.6vw;">
+    <div class="col-3" style="padding: 0;">
         <div class="recruitHeadContactTel">
-            <div style="font-size:0.3em;"><a href="tel:08054005639">☎電話問い合わせ</a></div>
-            <div style="font-size:0.3em;">※受付時間：9:00～18:00</div>
+            <div style="line-height: 3vw;font-size: 14px;line-height: 13px;padding-top: 5px;">
+                <a href="tel:08054005639">☎電話問い合わせ</a><br><span style="font-size: 0.3em;">※受付時間：9:00～18:00</span>
+            </div>
         </div>
     </div>
 </div>
@@ -409,8 +410,8 @@
     <div class="text-center">
         <h2>recruitment</h2>
     </div>
-    <div class="text-center mt-5 mb-5 lp-caption" style="font-size:7vw;">募集職種・募集要項</div>
-    <div class="text-center mt-5 mb-5" style="font-size: 3vw;font-weight: 700;">生活スタイルに合わせて、2つの働き方から選択できます。</div>
+    <div class="text-center mt-3 mb-2 lp-caption" style="font-size:7vw;">募集職種・募集要項</div>
+    <div class="text-center mt-5 mb-4" style="font-size: 3vw;font-weight: 700;">生活スタイルに合わせて、2つの働き方から選択できます。</div>
     <div class="row" style="margin-bottom: 5vw;">
         <div class="col-6">
             <div class="requruite-btn active toroku-btn" style="margin-left:auto;">登録ヘルパー</div>
@@ -425,7 +426,7 @@
             </span>
         </div>
         <div class="requruite-toroku">
-            <div class="text-center mt-3 requruite-under" style="font-size: 3vw;font-weight: 400;">まずは登録のみからでOK！</div>
+            <div class="text-center requruite-under" style="font-size: 3vw;font-weight: 700;">まずは登録のみからでOK！</div>
             <div class="text-center mt-3 mb-5" style="font-size: 3vw;font-weight: 400;">事前に頂いている希望のエリアや時間帯などから、<br>条件に合いそうなサービスを随時ご紹介させていただきます。</div>
             <div class="reqruite-info">
                 <table class="requruite-info-table">
@@ -449,7 +450,7 @@
             </div>
         </div>
         <div class="requruite-jokin" style="display:none">
-            <div class="text-center mt-3 requruite-under" style="font-size: 3vw;font-weight: 400;">経験者の方は常勤での働き方も可能です♪</div>
+            <div class="text-center requruite-under" style="font-size: 3vw;font-weight: 700;">経験者の方は常勤での働き方も可能です♪</div>
             <div class="text-center mt-3 mb-5" style="font-size: 3vw;font-weight: 400;">責任者昇格で＋50,000円の手当支給！<br>また、常勤さんには社用車支給で、<br>ご自宅の近くに会社負担で駐車場をお借りします。</div>
             <div class="reqruite-info">
                 <table class="requruite-info-table">
@@ -487,12 +488,13 @@
 </div>
 <div class="contact-area bg-image spview" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/contact-bg_sp.png);">
     <div class="contact-area bg-color">
-        <div class="text-center mt-5 mb-1" style="font-size:3vw;">ヘルパーへの登録・その他の職種への<br>ご応募については</div>
-        <div class="text-center mb-2" style="font-size: 6vw;font-weight: 700;margin: 4vw;">まずはこちらより<br>お気軽にお問い合わせください！</div>
+        <div class="text-center mt-4 mb-1" style="font-size:4vw;">ヘルパーへの登録・その他の職種への<br>ご応募については</div>
+        <div class="text-center mt-3 under-white" style="font-size: 6vw;font-weight: 700;margin: 0 auto;">まずはこちらより</div>
+        <div class="text-center mb-3 under-white" style="font-size: 6vw;font-weight: 700;margin: 0 auto;">お気軽にお問い合わせください！</div>
         <div class="text-center" style="font-size: 4vw;font-weight: 400;">「具体的にどんなお仕事があるか気になる...」</div>
         <div class="text-center" style="font-size: 4vw;font-weight: 400;">「私でもできる仕事あるかな...？」</div>
         <div class="text-center" style="font-size: 4vw;font-weight: 400;">などのご質問もお受けしております！</div>
-        <div class="text-center mt-3 contact-btn-web to-button" href="#contactForm" style="font-size: 4vw;font-weight: 400;">Webから応募・問い合わせ</div>
+        <div class="text-center mt-4 contact-btn-web to-button" href="#contactForm" style="font-size: 4vw;font-weight: 400;">Webから応募・問い合わせ</div>
         <div class="text-center mt-3 contact-btn-tel to-button" href="#contactForm" style="font-size: 4vw;font-weight: 400;">電話から応募・問い合わせ</div>
         <div class="text-center mt-2" style="font-size: 3vw;font-weight: 400;">※受付時間：9:00〜18:00（土日祝もOK）</div>
     </div>
@@ -525,7 +527,7 @@
     </div>
     <div class="footer-drawer"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/drawer.png"></div>
 </div>
-<div class="flow-area spview" style="margin-top: 10vw;">
+<div class="flow-area spview">
     <div class="text-center">
         <h2>flow</h2>
     </div>
@@ -659,10 +661,7 @@
     © 2022 houmonkaigojigyousyo arigatou
 </div>
 <div class="footer-area spview">
-    <div class="text-center copy">
-        <a href="#">個人情報保護方針</a>
-    </div>
-    <div class="text-center copy">
+    <div class="text-center copy" style="padding-top: 5vw;">
         © 2022 houmonkaigojigyousyo arigatou
     </div>
 </div>

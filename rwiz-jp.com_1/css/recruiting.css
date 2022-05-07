@@ -1296,7 +1296,7 @@ h2:before {
 }
 
 .contact-form input[type=checkbox] {
-    transform: scale(1.7);
+    transform: scale(1.5);
 }
 
 .wpcf7-form-control-wrap .wpcf7-form-control .wpcf7-list-item label input {
@@ -1360,7 +1360,7 @@ h2:before {
         font-size: 1.5vw;
     }
     .contact-form input[type=checkbox] {
-        transform: scale(1.7);
+        transform: scale(1.5);
     }
     .wpcf7-form-control-wrap .wpcf7-form-control .wpcf7-list-item label input {
         width: 40px;
@@ -1484,30 +1484,7 @@ footer-area {
     .footerFix {
         width: 100%;
         position: fixed;
-        top: calc(100vh - 90px);
         z-index: 9999;
-    }
-    .footerFix .contact-btn {
-        font-size: 1.5vw;
-        font-weight: 400;
-        width: 18vw;
-        color: #FFFFFF;
-        font-weight: 700;
-        background: linear-gradient(180deg, #FF8D23 0%, #E97710 100%);
-        box-shadow: 0px 4px 16px rgb(106 106 106 / 50%);
-        border-radius: 0.5vw;
-        padding: 1.5vw;
-    }
-    .footerFix .tel-btn {
-        font-size: 1.5vw;
-        font-weight: 400;
-        width: 18vw;
-        color: #FFFFFF;
-        font-weight: 700;
-        background: linear-gradient(180deg, #72CCAC 0%, #65BB9C 100%);
-        box-shadow: 0px 4px 16px rgb(106 106 106 / 50%);
-        border-radius: 0.5vw;
-        padding: 1.5vw;
     }
 }
 
@@ -1527,7 +1504,8 @@ footer-area {
     }
     .head-logo-img {
         margin-left: 10px;
-        width: 14vw;
+        height: 50px;
+        min-width: 63px;
     }
     .recruitHeadContactTel {
         height: 50px;
@@ -1815,18 +1793,31 @@ footer-area {
     }
     .requruite-btn {
         position: relative;
-        width: 35vw;
+        width: 40vw;
         text-align: center;
-        font-size: 4vw;
+        font-size: 16px;
         font-weight: 800;
-        color: #333333;
-        background-color: #FFFFFF;
-        padding: 1.5vw;
-        border: solid 1px #333333;
-        border-radius: 5vw;
+        padding: 10px;
+        border-radius: 50px;
         z-index: 10;
         cursor: pointer;
-        height: 9vw;
+        height: 45px;
+    }
+    .requruite-btn-arrow-left {
+        position: relative;
+        top: -2.5vw;
+        left: 54%;
+    }
+    .requruite-btn-arrow {
+        position: relative;
+        top: -2.5vw;
+        left: 37%;
+    }
+    .requruite-btn-arrow-top {
+        width: 4vw;
+    }
+    .requruite-under {
+        border-bottom: 7px solid #7CC6AB;
     }
     .requruite-info-table {
         width: 85vw;
@@ -1838,18 +1829,28 @@ footer-area {
         margin-bottom: 3vw;
     }
     .requruite-info-table .requruite-table-head {
-        font-size: 1.7vw;
+        font-size: 2vw;
         font-weight: 500;
         background-color: #333333;
         text-align: center;
-        width: 100%;
+        width: 17vw;
         margin: 0 auto;
         color: #FFF;
         border-radius: 5vw;
         padding: 0.3vw;
     }
+    .requruite-info-table th {
+        width: 30%;
+    }
     .requruite-info-table tr {
         height: 10vw;
+    }
+    .requruite-info-table td {
+        font-size: 2vw;
+        line-height: 2em;
+    }
+    .under-white {
+        line-height: 9vw;
     }
     .contact-area.bg-image {
         height: 105vw;
@@ -1932,6 +1933,11 @@ footer-area {
         font-weight: 700;
         width: 100%;
     }
+    #contactForm h2:before,
+    .company-area h2:before {
+        bottom: -2vw;
+        height: 2px;
+    }
     .contact-button {
         margin: 4em auto 0;
         width: 210px;
@@ -1985,28 +1991,30 @@ footer-area {
     .footerFix-sp {
         width: 100%;
         position: fixed;
-        top: calc(100vh - 15vw);
+        top: calc(100vh - 55px);
         z-index: 9999;
         margin: 0;
     }
     .footerFix-sp .contact-btn {
-        font-size: 4vw;
+        font-size: 14px;
+        line-height: 1em;
         font-weight: 400;
         color: #FFFFFF;
         font-weight: 700;
         background: linear-gradient(180deg, #FF8D23 0%, #E97710 100%);
         box-shadow: 0px 4px 16px rgb(106 106 106 / 50%);
-        border-radius: 0.5vw;
-        padding: 1vw;
+        padding: 3px;
+        height: 55px;
     }
     .footerFix-sp .tel-btn {
-        font-size: 4vw;
+        font-size: 14px;
+        line-height: 1em;
         font-weight: 400;
         color: #FFFFFF;
         font-weight: 700;
         background: linear-gradient(180deg, #72CCAC 0%, #65BB9C 100%);
         box-shadow: 0px 4px 16px rgb(106 106 106 / 50%);
-        border-radius: 0.5vw;
-        padding: 1vw;
+        padding: 3px;
+        height: 55px;
     }
 }
