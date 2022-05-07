@@ -54,4 +54,16 @@ $(function() {
         $('.pcview').show();
         $('.spview').hide();
     }
+
+    $(window).resize(function() {
+        var windowSize = $(window).width();
+
+        if (windowSize < 700) {
+            $('.spview').show();
+            $('.pcview').hide();
+        } else {
+            $('.pcview').show();
+            $('.spview').hide();
+        }
+    });
 });

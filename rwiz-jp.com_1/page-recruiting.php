@@ -4,10 +4,10 @@
     <div class="col-2 text-center contact-btn to-button" href="#contactForm"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/web.png" style="width: 30px;margin-bottom:5px;">WEBから<br>応募・問い合わせ</div>
     <div class="col-2 text-center tel-btn"><a href="tel:08054005639"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/phone.png" style="width: 30px;margin-bottom:5px;">電話から<br>応募・問い合わせ</a></div>
 </div>
-<div class="footerFix-sp row spview">
+<!-- <div class="footerFix-sp row spview">
     <div class="col-6 text-center contact-btn to-button" href="#contactForm"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/web.png" style="width: 30px;margin-bottom:5px;">WEBから<br>応募・問い合わせ</div>
     <div class="col-6 text-center tel-btn"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/phone.png" style="width: 30px;margin-bottom:5px;">電話から<br>応募・問い合わせ</a></div>
-</div>
+</div> -->
 <!-- Head-->
 <div class="recruitHead row pcview">
     <div class="col-2">
@@ -55,12 +55,12 @@
     <div class="first-view-grade">    
     </div>
     <div class="top-content">
-        <div style="font-weight: 700;font-size: 5.2vw;line-height: 5vw;">横須賀市・三浦市の訪問介護</div>
-        <div style="font-weight: 700;font-size: 10vw;line-height: 10vw;margin-top: 3vw;">登録ヘルパーで<br>自由な働き方を</div>
-        <div style="font-weight: 400;font-size: 5vw;line-height: 8vw;margin-top: 3vw;">夜勤なし・シフト制で<br>
+        <div style="font-weight: 700;font-size: 4.2vw;line-height: 5vw;">横須賀市・三浦市の訪問介護</div>
+        <div style="font-weight: 700;font-size: 8vw;line-height: 10vw;margin-top: 1vw;">登録ヘルパーで<br>自由な働き方を</div>
+        <div style="font-weight: 400;font-size: 4vw;line-height: 8vw;margin-top: 0vw;">夜勤なし・シフト制で<br>
         <span style="font-weight: 800;font-size: 7vw;line-height: 5vw;color:#7CC6AB;">時給<span style="font-size:1.3em;font-weight: 700;">1,600</span>円</span>から</div>
-        <div class="btn mt-5 to-button" href="#contactForm" style="width: 80vw;height: 13vw;border-radius: 100px;background: linear-gradient(180deg, #FF8D23 0%, #E97710 100%);box-shadow: 0px 4px 15px rgba(106, 106, 106, 0.51);font-size: 6vw;color:#FFF;margin: 4vw 4vw;">お問い合わせ</div>
-    </div>  
+        <div class="btn mt-5 to-button" href="#contactForm" style="width: 80vw;height: 17vw;border-radius: 100px;background: linear-gradient(180deg, #FF8D23 0%, #E97710 100%);box-shadow: 0px 4px 15px rgba(106, 106, 106, 0.51);font-size: 6vw;color:#FFF;padding-top: 4vw;margin: 4vw 4vw;">お問い合わせ</div>
+    </div>
     <div class="jokin">常勤も<br>OK</div>
     <div class="top-drawer"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/drawer.png"></div>
 </div>
@@ -118,9 +118,9 @@
         <h2>problems</h2>
     </div>
     <div class="text-center lp-caption">今の職場で<br>こんなお悩みはありませんか？</div>
-    <div style="position: absolute;width: 10vw;height: 10vw;background-color: #ffffff;top: 208vw;left: 44.5vw;z-index: 999;"></div>
-    <div class="row text-center problem-row" style="width:85%;margin: 7vw auto;">
-        <div class="col-6" style="border-right: 2px dashed #888888;border-bottom: 2px dashed #888888;">
+    <div style="position: relative;width: 10vw;height: 10vw;background-color: #ffffff;top: 183px;left: 45%;z-index: 999;"></div>
+    <div class="row text-center problem-row" style="width:85%;margin: 0 auto;">
+        <div class="col-6 square" style="border-right: 2px dashed #888888;border-bottom: 2px dashed #888888;">
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">職場の人間関係に疲れた<br></h5>
@@ -206,10 +206,10 @@
         <div style="margin-bottom: -8vw;"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/tryangle_sp.png" style="width: 100%;"></div>
         <div class="text-center lp-caption feature-caption">『訪問介護のありがとう』なら..</div>
     </div>
-    <div class="text-center">
+    <div class="text-center mt-4">
         <h2>features</h2>
     </div>
-    <div class="text-center mt-3 mb-3 lp-caption">働きやすいから選ばれる！<br>３つの特徴</div>
+    <div class="text-center mt-3 mb-5 lp-caption">働きやすいから選ばれる！<br>３つの特徴</div>
     <div class="row bg-white feature-head feature-first" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/feature-num1.png);">
         <div class="feature-title">働きたい時間に、働きたいだけ</div>
         <div class="feature-sentence">週１回・１時間からシフト設定ができ、自分の生活リズムにあわせて働くことができます。家事・育児のスキマ時間に働いたり、別の仕事との両立が可能です。始業時間は訪問先へ直行し、就業後は自宅へ直帰もOK。</div>
@@ -223,7 +223,7 @@
     <div class="row bg-white feature-head feature-third" style="margin-bottom:7vw;border-radius: 0 0 5vw 5vw;background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/feature-num3.png);">
         <div class="feature-title" style="margin-top: 2vw;">資格取得の費用は全額支援</div>
         <div class="feature-sentence">これから介護業界を目指す方や訪問介護が未経験の方などでもご安心ください。介護業務に必要な「介護職員初任者研修」やその他の資格を取得する際には、資格取得に必要な費用を全額支援しており、キャリアアップしやすい環境づくりをしています。</div>
-        <div class="feature-sentence" style="font-size: 3vw;">※お仕事の紹介までサポートさせていただき、一定の勤務時間を終えられた方のみの支援となります。</div>
+        <div class="feature-sentence" style="font-size: 2vw;">※お仕事の紹介までサポートさせていただき、一定の勤務時間を終えられた方のみの支援となります。</div>
         <img class="feature-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/feature3.png">
     </div>
 </div>
@@ -261,13 +261,13 @@
 </div>
 <div class="whvc-area spview">
     <div>
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/wave-top.png" style="width: 100%;">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/wave-top.png" style="width: 100%; height: 7vw;">
     </div>
     <div class="text-center">
         <h2>what home visit care</h2>
     </div>
-    <div class="text-center mt-3 mb-3 lp-caption">訪問介護ってどんなことをするの？</div>
-    <div class="row bg-white" style="width: 85vw;margin: 2vw auto;margin-bottom: 0.3vw;border-radius: 1vw 1vw 0 0;">
+    <div class="text-center mt-3 mb-3 lp-caption">訪問介護って<br>どんなことをするの？</div>
+    <div class="row bg-white" style="width: 85vw;margin: 29vw auto;margin-bottom: 0.3vw;border-radius: 1vw 1vw 0 0;">
         <div class="col-6">
             <div class="whvc-title shintai-kaigo active">身体介護</div>
         </div>
