@@ -452,8 +452,8 @@ h2:before {
         top: 2px;
         height: 7vw;
         padding: 1.5vw;
-        font-size: 2.5vw;
-        line-height: 2.5vw;
+        font-size: 2.2vw;
+        line-height: 3vw;
         width: 60%;
     }
     .features-area h2 {
@@ -475,7 +475,7 @@ h2:before {
         font-size: 1.1vw;
         font-weight: 400;
         margin-left: 6vw;
-        margin-top: 0.5vw;
+        margin-top: 1.5vw;
         color: #333333;
         line-height: 1.7em;
         width: 48vw;
@@ -645,7 +645,7 @@ h2:before {
         margin: 15px auto;
         height: 6em;
         font-weight: 400;
-        font-size: 1.3vw;
+        font-size: 1.1vw;
         line-height: 1.5em;
     }
     .whvc-last-sentence {
@@ -793,7 +793,7 @@ h2:before {
         position: relative;
         top: -22vw;
         left: 16vw;
-        font-size: 2vw;
+        font-size: 1.6vw;
         font-weight: 800;
         line-height: 2vw;
         letter-spacing: 0.2rem;
@@ -803,7 +803,7 @@ h2:before {
         position: relative;
         top: -19vw;
         left: 38vw;
-        font-size: 2vw;
+        font-size: 1.6vw;
         font-weight: 800;
         line-height: 2vw;
         letter-spacing: 0.2rem;
@@ -813,7 +813,7 @@ h2:before {
         position: relative;
         top: -21vw;
         left: 21vw;
-        font-size: 1.4vw;
+        font-size: 1.1vw;
         line-height: 1.5em;
     }
     .staff-sentence2 {
@@ -822,7 +822,7 @@ h2:before {
         left: 39vw;
         font-size: 1vw;
         line-height: 2rem;
-        font-size: 1.4vw;
+        font-size: 1.1vw;
         line-height: 1.5em;
     }
     .staff-block {
@@ -1007,13 +1007,13 @@ h2:before {
         z-index: 0;
     }
     .requruite-text {
-        font-weight: 400;
-        font-size: 1.8vw;
+        font-weight: 200;
+        font-size: 1.6vw;
         line-height: 30px;
     }
     .requruite-text-bold {
         font-weight: 700;
-        font-size: 1.8vw;
+        font-size: 1.6vw;
         line-height: 30px;
     }
     .requruite-info-table {
@@ -1605,7 +1605,7 @@ h2:before {
         position: relative;
         top: -13vw;
         font-size: 4vw;
-        height: 13vw;
+        height: 12.5vw;
     }
     .features-area h2 {
         font-weight: 400;
@@ -1620,7 +1620,7 @@ h2:before {
         font-size: 5vw;
         font-weight: 800;
         margin-left: 6vw;
-        margin-top: 3vw;
+        margin-top: 5vw !important;
         color: #333333;
         background: linear-gradient(transparent 60%, #FA7F0ECC 60%);
         line-height: 29px;
@@ -1630,12 +1630,13 @@ h2:before {
         font-size: 3.5vw;
         font-weight: 400;
         margin-left: 6vw;
-        margin-top: 2.5vw;
+        margin-top: 3vw;
         color: #333333;
     }
     .feature-img {
         width: 82vw;
         margin: 3vw auto;
+        margin-bottom: 5vw;
         border-radius: 5vw;
     }
     .feature-head {
@@ -1735,6 +1736,9 @@ h2:before {
         margin-top: 8vw;
         margin-bottom: 8vw;
     }
+    .voice-area {
+        padding-bottom: 10vw;
+    }
     .voice-area h2 {
         font-weight: 400;
         font-size: 5vw;
@@ -1756,6 +1760,7 @@ h2:before {
         margin: 0 auto;
         text-align: left;
         margin-top: 2vw;
+        font-size: 3.2vw;
     }
     .staff-1 {
         background-position-x: 5vw;
@@ -1763,6 +1768,7 @@ h2:before {
         background-size: 33vw;
         height: 40vw;
         margin-left: 0;
+        margin-bottom: 7vw;
     }
     .staff-2 {
         background-position-x: 47vw;
@@ -1851,6 +1857,7 @@ h2:before {
     }
     .under-white {
         line-height: 9vw;
+        margin-bottom: 2rem !important;
     }
     .contact-area.bg-image {
         height: 105vw;
