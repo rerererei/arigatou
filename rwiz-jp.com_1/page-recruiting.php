@@ -32,7 +32,7 @@
     </div>
     <div class="col-3" style="padding: 0;">
         <div class="recruitHeadContactTel">
-            <div style="line-height: 3vw;font-size: 14px;line-height: 13px;padding-top: 5px;">
+            <div style="line-height: 3vw;font-size: 14px;line-height: 15px;padding-top: 5px;">
                 <a href="tel:0469748364">☎電話問い合わせ</a><br><span style="font-size: 0.3em;">※受付時間：9:00～18:00</span>
             </div>
         </div>
@@ -60,7 +60,7 @@
         <div style="font-weight: 700;font-size: 8vw;line-height: 10vw;margin-top: 1vw;">登録ヘルパーで<br>自由な働き方を</div>
         <div style="font-weight: 400;font-size: 4vw;line-height: 8vw;margin-top: 0vw;">夜勤なし・シフト制で<br>
         <span style="font-weight: 800;font-size: 7vw;line-height: 5vw;color:#7CC6AB;">時給<span style="font-size:1.3em;font-weight: 700;">1,600</span>円</span>から</div>
-        <div class="btn mt-5 to-button" href="#contactForm" style="width: 80vw;height: 17vw;border-radius: 100px;background: linear-gradient(180deg, #FF8D23 0%, #E97710 100%);box-shadow: 0px 4px 15px rgba(106, 106, 106, 0.51);font-size: 6vw;color:#FFF;padding-top: 4vw;margin: 4vw 4vw;">お問い合わせ</div>
+        <div class="btn mt-5 to-button" href="#contactForm" style="width: 80vw;height: 17vw;border-radius: 100px;background: linear-gradient(180deg, #FF8D23 0%, #E97710 100%);box-shadow: 0px 4px 15px rgba(106, 106, 106, 0.51);font-size: 6vw;color:#FFF;padding-top: 4vw;margin: 4vw 4vw;line-height: 1.3;">お問い合わせ</div>
     </div>
     <div class="jokin">常勤も<br>OK</div>
     <div class="top-drawer"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/drawer.png"></div>
@@ -488,9 +488,9 @@
 </div>
 <div class="contact-area bg-image spview" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/contact-bg_sp.png);">
     <div class="contact-area bg-color">
-        <div class="text-center mt-4 mb-1" style="font-size:4vw;">ヘルパーへの登録・その他の職種への<br>ご応募については</div>
+        <div class="text-center mt-4" style="font-size:4vw;">ヘルパーへの登録・その他の職種への<br>ご応募については</div>
         <div class="text-center mt-3 under-white" style="font-size: 6vw;font-weight: 700;margin: 0 auto;">まずはこちらより</div>
-        <div class="text-center mb-3 under-white" style="font-size: 6vw;font-weight: 700;margin: 0 auto;">お気軽にお問い合わせください！</div>
+        <div class="text-center mb-4 under-white" style="font-size: 6vw;font-weight: 700;margin: 0 auto;">お気軽にお問い合わせください！</div>
         <div class="text-center" style="font-size: 4vw;font-weight: 400;">「具体的にどんなお仕事があるか気になる...」</div>
         <div class="text-center" style="font-size: 4vw;font-weight: 400;">「私でもできる仕事あるかな...？」</div>
         <div class="text-center" style="font-size: 4vw;font-weight: 400;">などのご質問もお受けしております！</div>

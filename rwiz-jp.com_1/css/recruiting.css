@@ -818,7 +818,7 @@ h2:before {
     }
     .staff-sentence2 {
         position: relative;
-        top: -16vw;
+        top: -18vw;
         left: 39vw;
         font-size: 1vw;
         line-height: 2rem;
@@ -999,7 +999,7 @@ h2:before {
     .requruite-btn-arrow-left {
         position: relative;
         top: -2.5vw;
-        left: 32vw;
+        left: 68%;
     }
     .requruite-btn-arrow-top {
         transform: rotate(330deg);
@@ -1817,7 +1817,7 @@ h2:before {
     .requruite-btn-arrow {
         position: relative;
         top: -2.5vw;
-        left: 37%;
+        left: 40%;
     }
     .requruite-btn-arrow-top {
         width: 4vw;
@@ -1990,9 +1990,10 @@ h2:before {
     }
     .footer-area {
         margin-top: 3vw;
-        height: 15vw;
+        height: 13vw;
         background: #F5F5F5;
-        margin-bottom: 15vw;
+        margin-bottom: 55px;
+        padding-top: 5vw;
     }
     .footerFix-sp {
         width: 100%;
