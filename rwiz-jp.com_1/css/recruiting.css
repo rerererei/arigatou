@@ -1934,6 +1934,10 @@ h2:before {
         text-align: center;
         color: #7CC6AB;
     }
+    .contact-wrapper {
+        width: 85vw;
+        margin: 2.4rem auto 0;
+    }
     .contact-form label {
         font-size: 4vw;
         font-weight: 700;
@@ -1971,6 +1975,15 @@ h2:before {
         padding-top: 6vw;
         padding-bottom: 10vw;
         margin-top: -15vw;
+    }
+    .company-area h2 {
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+        font-weight: 400;
+        font-size: 5vw;
+        line-height: 4vw;
+        text-align: center;
+        color: #7CC6AB;
     }
     .company-img {
         border-radius: 6vw;
