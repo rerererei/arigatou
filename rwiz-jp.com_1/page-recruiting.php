@@ -5,8 +5,8 @@
     <div class="col-2 text-center tel-btn"><a href="tel:0469748364"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/phone.png" style="width: 30px;margin-bottom:5px;">電話から<br>応募・問い合わせ</a></div>
 </div>
 <div class="footerFix-sp row spview">
-    <div class="col-6 text-center contact-btn to-button" href="#contactForm"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/web.png" style="width: 25px;margin-bottom:5px;">WEBから<br>応募・問い合わせ</div>
-    <div class="col-6 text-center tel-btn"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/phone.png" style="width: 25px;margin-bottom:5px;">電話から<br>応募・問い合わせ</a></div>
+    <div class="col-6 text-center contact-btn to-button" href="#contactForm-sp"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/web.png" style="width: 25px;margin-bottom:5px;">WEBから<br>応募・問い合わせ</div>
+    <div class="col-6 text-center tel-btn"><a href="tel:0469748364"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/phone.png" style="width: 25px;margin-bottom:5px;">電話から<br>応募・問い合わせ</a></div>
 </div>
 <!-- Head-->
 <div class="recruitHead row pcview">
@@ -60,7 +60,7 @@
         <div style="font-weight: 700;font-size: 8vw;line-height: 10vw;margin-top: 1vw;">登録ヘルパーで<br>自由な働き方を</div>
         <div style="font-weight: 400;font-size: 4vw;line-height: 8vw;margin-top: 0vw;">夜勤なし・シフト制で<br>
         <span style="font-weight: 800;font-size: 7vw;line-height: 5vw;color:#7CC6AB;">時給<span style="font-size:1.3em;font-weight: 700;">1,600</span>円</span>から</div>
-        <div class="btn mt-5 to-button" href="#contactForm" style="width: 80vw;height: 17vw;border-radius: 100px;background: linear-gradient(180deg, #FF8D23 0%, #E97710 100%);box-shadow: 0px 4px 15px rgba(106, 106, 106, 0.51);font-size: 6vw;color:#FFF;padding-top: 4vw;margin: 4vw 4vw;line-height: 1.3;">お問い合わせ</div>
+        <div class="btn mt-5 to-button" href="#contactForm-sp" style="width: 80vw;height: 17vw;border-radius: 100px;background: linear-gradient(180deg, #FF8D23 0%, #E97710 100%);box-shadow: 0px 4px 15px rgba(106, 106, 106, 0.51);font-size: 6vw;color:#FFF;padding-top: 4vw;margin: 4vw 4vw;line-height: 1.3;">お問い合わせ</div>
     </div>
     <div class="jokin">常勤も<br>OK</div>
     <div class="top-drawer"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/drawer.png"></div>
@@ -494,8 +494,8 @@
         <div class="text-center" style="font-size: 4vw;font-weight: 400;">「具体的にどんなお仕事があるか気になる...」</div>
         <div class="text-center" style="font-size: 4vw;font-weight: 400;">「私でもできる仕事あるかな...？」</div>
         <div class="text-center" style="font-size: 4vw;font-weight: 400;">などのご質問もお受けしております！</div>
-        <div class="text-center mt-4 contact-btn-web to-button" href="#contactForm" style="font-size: 4vw;font-weight: 400;">Webから応募・問い合わせ</div>
-        <div class="text-center mt-3 contact-btn-tel to-button" href="#contactForm" style="font-size: 4vw;font-weight: 400;">電話から応募・問い合わせ</div>
+        <div class="text-center mt-4 contact-btn-web to-button" href="#contactForm-sp" style="font-size: 4vw;font-weight: 400;">Webから応募・問い合わせ</div>
+        <div class="text-center mt-3 contact-btn-tel to-button" href="#contactForm-sp" style="font-size: 4vw;font-weight: 400;">電話から応募・問い合わせ</div>
         <div class="text-center mt-2" style="font-size: 3vw;font-weight: 400;">※受付時間：9:00〜18:00（土日祝もOK）</div>
     </div>
 </div>
@@ -558,7 +558,7 @@
     <div class="text-center mt-3 mb-5 lp-caption">お問い合わせフォーム</div>
     <?php echo do_shortcode('[contact-form-7 id="11" title="採用ページ問い合わせ"]'); ?>
 </div>
-<div id="contactForm" class="form-area spview">
+<div id="contactForm-sp" class="form-area spview">
     <div class="text-center">
         <h2>form</h2>
     </div>
@@ -661,7 +661,7 @@
     © 2022 houmonkaigojigyousyo arigatou
 </div>
 <div class="footer-area spview">
-    <div class="text-center copy" style="padding-top: 5vw;">
+    <div class="text-center copy">
         © 2022 houmonkaigojigyousyo arigatou
     </div>
 </div>

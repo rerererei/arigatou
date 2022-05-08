@@ -1939,7 +1939,7 @@ h2:before {
         font-weight: 700;
         width: 100%;
     }
-    #contactForm h2:before,
+    #contactForm-sp h2:before,
     .company-area h2:before {
         bottom: -2vw;
         height: 2px;
@@ -1960,7 +1960,7 @@ h2:before {
         content: "";
         background: url(../img/Polygon9.png);
         top: 6.5vw;
-        left: 43vw;
+        left: 75%;
         background-size: 2vw;
         background-repeat: no-repeat;
         height: 4vw;
@@ -1990,10 +1990,11 @@ h2:before {
     }
     .footer-area {
         margin-top: 3vw;
-        height: 13vw;
+        height: 50px;
         background: #F5F5F5;
         margin-bottom: 55px;
-        padding-top: 5vw;
+        padding-top: 17px;
+        font-size: 10px;
     }
     .footerFix-sp {
         width: 100%;
