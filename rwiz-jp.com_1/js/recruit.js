@@ -67,3 +67,29 @@ $(function() {
         }
     });
 });
+
+$(function() {
+    var windowSize = $(window).width();
+    if (windowSize < 700) {
+        var footerBtn = $('.footerFix-sp');
+        footerBtn.hide();
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 75) {
+                footerBtn.fadeIn();
+            } else {
+                footerBtn.fadeOut();
+            }
+        });
+    } else {
+        var footerBtn = $('.footerFix');
+        footerBtn.hide();
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 50) {
+                footerBtn.fadeIn();
+            } else {
+                footerBtn.fadeOut();
+            }
+        });
+
+    }
+});
