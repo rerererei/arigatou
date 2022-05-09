@@ -488,7 +488,7 @@
         <div class="text-center" style="font-size: 4vw;font-weight: 400;">「私でもできる仕事あるかな...？」</div>
         <div class="text-center" style="font-size: 4vw;font-weight: 400;">などのご質問もお受けしております！</div>
         <div class="text-center mt-5 contact-btn-web to-button to-form-btn" href="#contactForm-sp">Webから応募・問い合わせ</div>
-        <div class="text-center mt-4 contact-btn-tel to-button to-tel-btn" href="#contactForm-sp">電話から応募・問い合わせ</div>
+        <div class="text-center mt-4 contact-btn-tel to-tel-btn"><a href="tel:0468748364" style="width: 100%;display: inline-block;">電話から応募・問い合わせ</a></div>
         <div class="text-center mt-2" style="font-size: 3vw;font-weight: 400;">※受付時間：9:00〜18:00（土日祝もOK）</div>
     </div>
 </div>
