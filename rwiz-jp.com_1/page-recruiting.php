@@ -4,10 +4,6 @@
     <div class="col-2 text-center contact-btn to-button" href="#contactForm"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/web.png" style="width: 30px;margin-bottom:5px;">WEBから<br>応募・問い合わせ</div>
     <div class="col-2 text-center tel-btn"><a href="tel:0468748364"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/phone.png" style="width: 30px;margin-bottom:5px;">電話から<br>応募・問い合わせ</a></div>
 </div>
-<div class="footerFix-sp row spview">
-    <div class="col-6 text-center contact-btn to-button" href="#contactForm-sp"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/web.png" style="width: 25px;margin-bottom:5px;">WEBから<br>応募・問い合わせ</div>
-    <div class="col-6 text-center tel-btn"><a href="tel:0468748364"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/phone.png" style="width: 25px;margin-bottom:5px;">電話から<br>応募・問い合わせ</a></div>
-</div>
 <!-- Head-->
 <div class="recruitHead row pcview">
     <div class="col-2">
@@ -112,7 +108,7 @@
         <h2>problems</h2>
     </div>
     <div class="text-center lp-caption">今の職場で<br>こんなお悩みはありませんか？</div>
-    <div style="position: relative;width: 10vw;height: 10vw;background-color: #ffffff;top: 183px;left: 45%;z-index: 999;"></div>
+    <div style="position: relative;width: 10vw;height: 10vw;background-color: #ffffff;top: 183px;left: 45%;z-index: 10;"></div>
     <div class="row text-center problem-row" style="width:85%;margin: 0 auto;">
         <div class="col-6 square" style="border-right: 2px dashed #888888;border-bottom: 2px dashed #888888;">
             <div class="card">
@@ -481,7 +477,7 @@
 </div>
 <div class="contact-area bg-image spview" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/contact-bg_sp.png);">
     <div class="contact-area bg-color">
-        <div class="text-center mt-1" style="font-size:4vw;">ヘルパーへの登録・その他の職種への<br>ご応募については</div>
+        <div class="text-center" style="font-size:4vw;margin-top: 1.25em;">ヘルパーへの登録・その他の職種への<br>ご応募については</div>
         <div class="text-center mt-3 under-white" style="font-size: 6vw;font-weight: 700;margin: 0 auto;">まずはこちらより</div>
         <div class="text-center mb-4 under-white" style="font-size: 6vw;font-weight: 700;margin: 0 auto;">お気軽にお問い合わせください！</div>
         <div class="text-center" style="font-size: 4vw;font-weight: 400;">「具体的にどんなお仕事があるか気になる...」</div>
@@ -657,6 +653,10 @@
     <div class="text-center copy">
         © 2022 houmonkaigojigyousyo arigatou
     </div>
+</div>
+<div class="footerFix-sp row spview">
+    <div class="col-6 text-center contact-btn to-button" href="#contactForm-sp"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/web.png" style="width: 25px;margin-bottom:5px;">WEBから<br>応募・問い合わせ</div>
+    <div class="col-6 text-center tel-btn"><a href="tel:0468748364"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/phone.png" style="width: 25px;margin-bottom:5px;">電話から<br>応募・問い合わせ</a></div>
 </div>
 
 </body>
