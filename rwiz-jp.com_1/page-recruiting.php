@@ -2,11 +2,11 @@
 <!-- footer固定 -->
 <div class="footerFix row justify-content-end pcview">
     <div class="col-2 text-center contact-btn to-button" href="#contactForm"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/web.png" style="width: 30px;margin-bottom:5px;">WEBから<br>応募・問い合わせ</div>
-    <div class="col-2 text-center tel-btn"><a href="tel:0469748364"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/phone.png" style="width: 30px;margin-bottom:5px;">電話から<br>応募・問い合わせ</a></div>
+    <div class="col-2 text-center tel-btn"><a href="tel:0468748364"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/phone.png" style="width: 30px;margin-bottom:5px;">電話から<br>応募・問い合わせ</a></div>
 </div>
 <div class="footerFix-sp row spview">
     <div class="col-6 text-center contact-btn to-button" href="#contactForm-sp"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/web.png" style="width: 25px;margin-bottom:5px;">WEBから<br>応募・問い合わせ</div>
-    <div class="col-6 text-center tel-btn"><a href="tel:0469748364"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/phone.png" style="width: 25px;margin-bottom:5px;">電話から<br>応募・問い合わせ</a></div>
+    <div class="col-6 text-center tel-btn"><a href="tel:0468748364"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/phone.png" style="width: 25px;margin-bottom:5px;">電話から<br>応募・問い合わせ</a></div>
 </div>
 <!-- Head-->
 <div class="recruitHead row pcview">
@@ -18,7 +18,7 @@
     <div class="col-10" style="padding: 0;">
         <div class="recruitHeadContactTel">
             <div class="text-1">お電話での問い合わせ</div>
-            <div class="text-2"><a href="tel:0469748364"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/phone.png" style="margin-top: -11px;width: 1em;margin-right: -5px;">：046-974-8364</a></div>
+            <div class="text-2"><a href="tel:0468748364"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/phone.png" style="margin-top: -11px;width: 1em;margin-right: -5px;">：046-874-8364</a></div>
             <div class="text-3">※受付時間：9:00～18:00(土日祝を除く)</div>
         </div>
         <div class="recruitHeadContact to-button" href="#contactForm">お問い合わせ</div>
@@ -29,13 +29,6 @@
         <a href="<?php echo esc_url(home_url()); ?>">
             <img class="head-logo-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/logo.png">
         </a>    
-    </div>
-    <div class="col-3" style="padding: 0;">
-        <div class="recruitHeadContactTel">
-            <div style="line-height: 3vw;font-size: 14px;line-height: 15px;padding-top: 5px;">
-                <a href="tel:0469748364">☎電話問い合わせ</a><br><span style="font-size: 0.3em;">※受付時間：9:00～18:00</span>
-            </div>
-        </div>
     </div>
 </div>
 <!-- FirstView-->
@@ -224,7 +217,7 @@
     <div class="row bg-white feature-head feature-third" style="margin-bottom:7vw;border-radius: 0 0 5vw 5vw;background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/feature-num3.png);">
         <div class="feature-title" style="margin-top: 2vw;">資格取得の費用は全額支援</div>
         <div class="feature-sentence">これから介護業界を目指す方や訪問介護が未経験の方などでもご安心ください。介護業務に必要な「介護職員初任者研修」やその他の資格を取得する際には、資格取得に必要な費用を全額支援しており、キャリアアップしやすい環境づくりをしています。</div>
-        <div class="feature-sentence" style="font-size: 2vw;">※お仕事の紹介までサポートさせていただき、一定の勤務時間を終えられた方のみの支援となります。</div>
+        <div class="feature-sentence" style="font-size: 3vw;">※お仕事の紹介までサポートさせていただき、一定の勤務時間を終えられた方のみの支援となります。</div>
         <img class="feature-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/feature3.png">
     </div>
 </div>
@@ -488,14 +481,14 @@
 </div>
 <div class="contact-area bg-image spview" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/contact-bg_sp.png);">
     <div class="contact-area bg-color">
-        <div class="text-center mt-4" style="font-size:4vw;">ヘルパーへの登録・その他の職種への<br>ご応募については</div>
+        <div class="text-center mt-1" style="font-size:4vw;">ヘルパーへの登録・その他の職種への<br>ご応募については</div>
         <div class="text-center mt-3 under-white" style="font-size: 6vw;font-weight: 700;margin: 0 auto;">まずはこちらより</div>
         <div class="text-center mb-4 under-white" style="font-size: 6vw;font-weight: 700;margin: 0 auto;">お気軽にお問い合わせください！</div>
         <div class="text-center" style="font-size: 4vw;font-weight: 400;">「具体的にどんなお仕事があるか気になる...」</div>
         <div class="text-center" style="font-size: 4vw;font-weight: 400;">「私でもできる仕事あるかな...？」</div>
         <div class="text-center" style="font-size: 4vw;font-weight: 400;">などのご質問もお受けしております！</div>
-        <div class="text-center mt-4 contact-btn-web to-button" href="#contactForm-sp" style="font-size: 4vw;font-weight: 400;">Webから応募・問い合わせ</div>
-        <div class="text-center mt-3 contact-btn-tel to-button" href="#contactForm-sp" style="font-size: 4vw;font-weight: 400;">電話から応募・問い合わせ</div>
+        <div class="text-center mt-5 contact-btn-web to-button to-form-btn" href="#contactForm-sp">Webから応募・問い合わせ</div>
+        <div class="text-center mt-4 contact-btn-tel to-button to-tel-btn" href="#contactForm-sp">電話から応募・問い合わせ</div>
         <div class="text-center mt-2" style="font-size: 3vw;font-weight: 400;">※受付時間：9:00〜18:00（土日祝もOK）</div>
     </div>
 </div>
@@ -556,7 +549,7 @@
         <h2>form</h2>
     </div>
     <div class="text-center mt-3 mb-5 lp-caption">お問い合わせフォーム</div>
-    <?php echo do_shortcode('[contact-form-7 id="11" title="採用ページ問い合わせ"]'); ?>
+    <?php echo do_shortcode('[contact-form-7 id="81" title="採用ページ問い合わせ"]'); ?>
 </div>
 <div id="contactForm-sp" class="form-area spview">
     <div class="text-center">
@@ -564,7 +557,7 @@
     </div>
     <div class="text-center mt-3 mb-5 lp-caption" style="font-size:6vw">お問い合わせフォーム</div>
     <div style="width: 85vw;margin: 0 auto;">
-        <?php echo do_shortcode('[contact-form-7 id="11" title="採用ページ問い合わせ"]'); ?>
+        <?php echo do_shortcode('[contact-form-7 id="81" title="採用ページ問い合わせ"]'); ?>
     </div>
 </div>
 <!-- company-->
@@ -624,7 +617,7 @@
     <div class="company-block">
         <div class="row" style="margin-left: 8vw;margin-top: 3vw;">
             <div class="col-4 company-title">
-                    事業所名
+                事業所名
             </div>
             <div class="col-7 campany-info">
                 訪問介護事業所 ありがとう<br>

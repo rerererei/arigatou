@@ -1116,11 +1116,13 @@ h2:before {
         box-shadow: 0px 4px 16px rgb(106 106 106 / 50%);
         border-radius: 100px;
         padding: 1.5vw;
-        margin-top: 2vw !important;
+        margin-top: 3vw !important;
     }
     .contact-text-middle-bold {
         font-weight: 700;
         font-size: 1.5vw;
+        margin-top: 0vw !important;
+        margin-bottom: 2vw !important;
     }
     .contact-text-middle {
         font-weight: 400;
@@ -1129,6 +1131,8 @@ h2:before {
     .contact-text-large-bold {
         font-weight: 700;
         font-size: 2vw;
+        line-height: 4vw;
+        margin-bottom: 2vw !important;
     }
 }
 
@@ -1360,7 +1364,7 @@ h2:before {
         font-size: 1.5vw;
     }
     .contact-form input[type=checkbox] {
-        transform: scale(1.5);
+        transform: scale(1.2);
     }
     .wpcf7-form-control-wrap .wpcf7-form-control .wpcf7-list-item label input {
         width: 40px;
@@ -1416,7 +1420,7 @@ h2:before {
     }
     .company-area {
         background-color: #FFF;
-        padding-top: 3vw;
+        padding-top: 2vw;
     }
     .company-title {
         color: #7CC6AB;
@@ -1424,7 +1428,7 @@ h2:before {
         font-size: 1.2vw;
     }
     .campany-info {
-        font-size: 1vw;
+        font-size: 1.2vw;
     }
     .company-row {
         margin-left: 5vw;
@@ -1727,7 +1731,7 @@ h2:before {
         width: 70vw;
         margin: 0 auto;
         margin-top: 2vw;
-        font-size: 2vw;
+        font-size: 3vw;
     }
     .whvc-last-sentence-sp {
         text-align: center;
@@ -1781,7 +1785,7 @@ h2:before {
         line-height: 1.5em;
     }
     .staff-age {
-        font-size: 1.3vw;
+        font-size: 2vw;
         margin-left: 1.5em;
     }
     .requruite-area {
@@ -1852,46 +1856,50 @@ h2:before {
         height: 10vw;
     }
     .requruite-info-table td {
-        font-size: 2vw;
+        font-size: 2.5vw;
         line-height: 2em;
     }
     .under-white {
         line-height: 9vw;
     }
     .contact-area.bg-image {
-        height: 105vw;
-        background-size: 100%;
+        height: 115vw;
+        background-size: 110%;
     }
     .contact-area.bg-color {
-        height: 105vw;
+        height: 115vw;
         background: #F3F1EB6B;
         padding-top: 2vw;
     }
     .contact-area .contact-btn-web {
-        font-size: 1.5vw;
+        font-size: 5vw;
         font-weight: 400;
-        width: 68vw;
+        width: 80vw;
+        height: 17vw;
         margin: 0 auto;
         background: #FFFFFF;
         color: #FFFFFF;
-        font-weight: 700;
+        font-weight: 400;
         background: linear-gradient(180deg, #FF8D23 0%, #E97710 100%);
         box-shadow: 0px 4px 16px rgb(106 106 106 / 50%);
         border-radius: 100px;
-        padding: 3.5vw;
+        padding-top: 5vw;
+        line-height: 1.3;
     }
     .contact-area .contact-btn-tel {
-        font-size: 1.5vw;
+        font-size: 5vw;
         font-weight: 400;
-        width: 68vw;
+        width: 80vw;
+        height: 17vw;
         margin: 0 auto;
         background: #FFFFFF;
         color: #FFFFFF;
-        font-weight: 700;
+        font-weight: 400;
         background: linear-gradient(180deg, #72CCAC 0%, #65BB9C 100%);
         box-shadow: 0px 5px 9px rgba(106, 106, 106, 0.25);
         border-radius: 100px;
-        padding: 3.5vw;
+        padding-top: 5vw;
+        line-height: 1.3;
     }
     .flow-area h2 {
         font-weight: 400;
@@ -1953,12 +1961,27 @@ h2:before {
         margin: 4em auto 0;
         width: 210px;
     }
+    .contact-form input {
+        padding: 6px 10px;
+        font-size: 4vw;
+    }
     .contact-button input {
         background: linear-gradient(180deg, #FF8D23 0%, #E97710 100%);
         box-shadow: 0px 4px 16px rgb(106 106 106 / 50%);
         border-radius: 10vw;
         padding: 3vw;
         font-size: 3vw;
+    }
+    .wpcf7-form-control-wrap .wpcf7-form-control .wpcf7-list-item .wpcf7-list-item-label {
+        font-size: 3vw;
+    }
+    .wpcf7-form-control-wrap .wpcf7-form-control .wpcf7-list-item {
+        margin-bottom: 1vw;
+    }
+    .contact-form textarea {
+        font-size: 4vw;
+        padding: 7px 10px;
+        height: 150px;
     }
     .contact-button::before {
         position: absolute;
@@ -2000,7 +2023,10 @@ h2:before {
     .company-title {
         color: #7CC6AB;
         font-weight: 700;
-        font-size: 4vw;
+        font-size: 3vw;
+    }
+    .campany-info {
+        font-size: 2.5vw;
     }
     .footer-area {
         margin-top: 3vw;
