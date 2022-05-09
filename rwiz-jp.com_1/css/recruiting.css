@@ -1031,7 +1031,7 @@ h2:before {
         width: 13vw;
         background-color: #333333;
         text-align: center;
-        margin: 0 !important;
+        margin: 0 auto;
         color: #FFF;
         border-radius: 5vw;
         padding: 0.8vw;
@@ -1844,7 +1844,7 @@ h2:before {
         background-color: #333333;
         text-align: center;
         width: 17vw;
-        margin: 0 auto;
+        margin: 0 !important;
         color: #FFF;
         border-radius: 5vw;
         padding: 0.3vw;
