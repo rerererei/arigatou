@@ -152,7 +152,7 @@ h2:before {
 /*topcontent*/
 
 .first-view {
-    background: url(http://localhost:8001/wp-content/themes/rwiz-jp.com_1/img/recruit/first-view.png);
+    background: url(../img/recruit/first-view.png);
     background-repeat: no-repeat;
     width: 100%;
     background-size: 100%;
