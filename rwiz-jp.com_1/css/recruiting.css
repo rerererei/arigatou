@@ -1031,7 +1031,7 @@ h2:before {
         width: 13vw;
         background-color: #333333;
         text-align: center;
-        margin: 0 auto;
+        margin: 0 !important;
         color: #FFF;
         border-radius: 5vw;
         padding: 0.8vw;
@@ -1304,7 +1304,7 @@ h2:before {
 }
 
 .wpcf7-form-control-wrap .wpcf7-form-control .wpcf7-list-item label input {
-    width: 40px;
+    width: 25px;
 }
 
 .wpcf7-form-control-wrap .wpcf7-form-control .wpcf7-list-item label {
@@ -1367,7 +1367,7 @@ h2:before {
         transform: scale(1.2);
     }
     .wpcf7-form-control-wrap .wpcf7-form-control .wpcf7-list-item label input {
-        width: 40px;
+        width: 25px;
     }
     .wpcf7-form-control-wrap .wpcf7-form-control .wpcf7-list-item label {
         width: 100%
@@ -1850,14 +1850,14 @@ h2:before {
         padding: 0.3vw;
     }
     .requruite-info-table th {
-        width: 30%;
+        width: 25%;
     }
     .requruite-info-table tr {
-        height: 10vw;
+        height: 12vw;
     }
     .requruite-info-table td {
-        font-size: 2.5vw;
-        line-height: 2em;
+        font-size: 3vw;
+        line-height: 1.5em;
     }
     .under-white {
         line-height: 9vw;
