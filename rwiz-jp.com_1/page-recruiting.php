@@ -582,7 +582,7 @@
                     神奈川県横浜市中区不老町1-6-10苗場ビル3F-A<br>
                     TEL:045-263-9431<br>
                     FAX:045-263-9432<br>
-                    MAIL:info@rwiz-jp.comte
+                    MAIL:info@rwiz-jp.com
                 </div>
             </div>
             <div class="row company-row">
@@ -629,7 +629,7 @@
                 神奈川県横浜市中区不老町1-6-10苗場ビル3F-A<br>
                 TEL:045-263-9431<br>
                 FAX:045-263-9432<br>
-                MAIL:info@rwiz-jp.comte
+                MAIL:info@rwiz-jp.com
             </div>
         </div>
         <div class="row" style="margin-left: 8vw;margin-top: 3vw;">
